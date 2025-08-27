@@ -2,13 +2,13 @@ body {
     background-color: #000;
 
     color: #000;
-    font-family: 'inter', sans-serif;
-    font-size: 150%;
+    font-family: 'poppins', sans-serif;
+    font-size: 125%;
 
     margin: 0;
     padding: 0;
 
-    background-image: url("./images/background-bookshelf.jpg");
+    background-image: url("./images/background-bookshelf.jpeg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -22,7 +22,7 @@ label {
 h1 {
     color: #000;
     justify-self: center;
-    padding-top: 4vh;
+    padding-top: 3vh;
 }
 /* https://stackoverflow.com/questions/73988128/why-isnt-backdrop-filter-blur-working-properly */
 .background-blur {
@@ -33,22 +33,29 @@ h1 {
     top: 0px;
     right: 0px;
 
-    background-color: #ffffff15;
-    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.119);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 
     border: 5px solid transparent;
 }
 
 .login-container {
-    width: 30vw;
-    height: 65vh;
+    width: 575px;
+    height: 610px;
 
     justify-self: center;
 
-    margin-top: 20vh;
+    margin-top: 16vh;
 
-    background-color: #fff;
-    border-radius: 10px;
+    padding-bottom: 3vh; 
+
+    background-color: #f2f2f2;
+
+    border: 2px solid #888;
+    border-radius: 3px;
 }
 
 .login-input {
@@ -60,17 +67,23 @@ h1 {
     justify-self: center;
     margin-top: 5vh;
 
-    background-color: transparent;
-    border: 1px solid #000;
-    border-radius: 10px;
+    background-color: #e6e6e6;
+    border: 1px solid #888;
+    border-radius: 3px;
 
     font-size: 125%;
     color: #000;
 
     padding-left: 1vw;
+
+    -webkit-box-shadow: inset 3px 0px 17px -2px rgba(0,0,0,0.12); 
+    box-shadow: inset 5px 0px 17px -2px rgba(0,0,0,0.12);
 }
 .login-input::placeholder {
     color: #888;
+}
+.login-input:focus {
+    outline-width: 0;
 }
 
 .login-checkbox {
@@ -81,6 +94,7 @@ h1 {
     margin-left: 70px;
 
     color: #000;
+    accent-color: #000;
 }
 
 .login-button {
@@ -93,16 +107,64 @@ h1 {
     margin-top: 3vh;
     margin-right: 3vw;
 
-    background-color: transparent;
-    transition: 0.3s;
+    background-color: #e6e6e6;
 
-    border: 1px solid #000;
-    border-radius: 10px;
+    border: 1px solid #888;
 
-    color: #000;
-    font-size: 150%;
+    color: #555;
+    font-size: 150%; 
+
+    cursor: pointer;
+    -webkit-box-shadow: 2px 5px 21px -10px #000; 
+    box-shadow: 5px 5px 20px -20px #000;
 }
 .login-button:hover {
+    transition: 0.5s;
+    -webkit-box-shadow: inset 3px 0px 17px -2px rgba(0,0,0,0.4); 
+    box-shadow: inset 5px 0px 17px -2px rgba(0,0,0,0.4);
+}
+
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    width: 92vw;
+    height: 90vh;
+
+    justify-self: center;
+    margin-top: 5vh;
+
+    gap: 0.9vw;
+}
+
+.select-container {
+    width: 20vw;
+
+    margin: 0;
+    padding: 0;
+
     background-color: #000;
-    color: #fff;
+
+    border-radius: 10px;
+}
+.books-container {
+    width: 50vw;
+
+    margin: 0;
+    padding: 0;
+    
+    background-color: #000;
+
+    border-radius: 10px;
+}
+.register-container {
+    width: 20vw;
+    height: 40vh;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #000;
+
+    border-radius: 10px;
 }
