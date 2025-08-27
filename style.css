@@ -24,10 +24,14 @@ h1 {
     justify-self: center;
     padding-top: 4vh;
 }
-
+/* https://stackoverflow.com/questions/73988128/why-isnt-backdrop-filter-blur-working-properly */
 .background-blur {
-    width: 99.5vw;
-    height: 99vh;
+    position: absolute;
+
+    bottom: 0px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
 
     background-color: #ffffff15;
     backdrop-filter: blur(5px);
