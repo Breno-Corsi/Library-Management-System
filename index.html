@@ -11,12 +11,14 @@
 </head>
 
 <body>
-    <div class="login-container">
-        <h1>Log in</h1>
-        <input placeholder="e-mail" class="login-input" type="email" id="login-email">
-        <input placeholder="password" class="login-input" type="password" id="login-password">
-        <input type="checkbox" class="login-checkbox" id="rememberMe"><label for="rememberMe">Remember me</label>
-        <button class="login-button">Login</button>
+    <div class="background-blur">
+        <div class="login-container">
+            <h1>Log in</h1>
+            <input placeholder="e-mail" class="login-input" type="email" id="login-email">
+            <input placeholder="password" class="login-input" type="password" id="login-password">
+            <input type="checkbox" class="login-checkbox" id="rememberMe"><label for="rememberMe">Remember me</label>
+            <button class="login-button" onclick="loginValidation()">Login</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

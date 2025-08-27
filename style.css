@@ -1,9 +1,12 @@
 body {
     background-color: #000;
 
-    color: #fff;
+    color: #000;
     font-family: 'inter', sans-serif;
     font-size: 150%;
+
+    margin: 0;
+    padding: 0;
 
     background-image: url("./images/background-bookshelf.jpg");
     background-attachment: fixed;
@@ -14,12 +17,22 @@ label {
     position: relative;
     bottom: 4px;
     padding-left: 10px;
-    color: #fff;
+    color: #000;
 }
 h1 {
-    color: #fff;
+    color: #000;
     justify-self: center;
-    padding-top: 1vh;
+    padding-top: 4vh;
+}
+
+.background-blur {
+    width: 99.5vw;
+    height: 99vh;
+
+    background-color: #ffffff15;
+    backdrop-filter: blur(5px);
+
+    border: 5px solid transparent;
 }
 
 .login-container {
@@ -30,9 +43,7 @@ h1 {
 
     margin-top: 20vh;
 
-    background-color: #ffffff15;
-    backdrop-filter: blur(5px);
-    border: solid #fff;
+    background-color: #fff;
     border-radius: 10px;
 }
 
@@ -46,16 +57,16 @@ h1 {
     margin-top: 5vh;
 
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     border-radius: 10px;
 
     font-size: 125%;
-    color: #ffffff;
+    color: #000;
 
     padding-left: 1vw;
 }
 .login-input::placeholder {
-    color: #999;
+    color: #888;
 }
 
 .login-checkbox {
@@ -75,20 +86,19 @@ h1 {
     width: 12vw;
     height: 10vh;
 
-    margin-top: 2vh;
+    margin-top: 3vh;
     margin-right: 3vw;
 
-    background-color: #ffffff15;
-    backdrop-filter: blur(5px);
+    background-color: transparent;
     transition: 0.3s;
 
-    border: 3px solid #fff;
+    border: 1px solid #000;
     border-radius: 10px;
 
-    color: #ffffff;
+    color: #000;
     font-size: 150%;
 }
 .login-button:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #000;
+    color: #fff;
 }
