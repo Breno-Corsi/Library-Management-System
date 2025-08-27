@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background-color: #fff;
 
     color: #000;
     font-family: 'poppins', sans-serif;
@@ -7,11 +7,6 @@ body {
 
     margin: 0;
     padding: 0;
-
-    background-image: url("./images/background-bookshelf.jpeg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 label {
     position: relative;
@@ -24,6 +19,20 @@ h1 {
     justify-self: center;
     padding-top: 3vh;
 }
+
+.background {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-image: url("./images/background-bookshelf.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 /* https://stackoverflow.com/questions/73988128/why-isnt-backdrop-filter-blur-working-properly */
 .background-blur {
     position: absolute;
@@ -33,13 +42,9 @@ h1 {
     top: 0px;
     right: 0px;
 
-    background: rgba(255, 255, 255, 0.119);
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
-
-    border: 5px solid transparent;
 }
 
 .login-container {
@@ -125,46 +130,11 @@ h1 {
 }
 
 .home-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    width: 92vw;
-    height: 90vh;
+    width: 1800px;
+    height: 830px;
 
     justify-self: center;
-    margin-top: 5vh;
-
-    gap: 0.9vw;
-}
-
-.select-container {
-    width: 20vw;
-
-    margin: 0;
-    padding: 0;
+    margin-top: 60px;
 
     background-color: #000;
-
-    border-radius: 10px;
-}
-.books-container {
-    width: 50vw;
-
-    margin: 0;
-    padding: 0;
-    
-    background-color: #000;
-
-    border-radius: 10px;
-}
-.register-container {
-    width: 20vw;
-    height: 40vh;
-
-    margin: 0;
-    padding: 0;
-
-    background-color: #000;
-
-    border-radius: 10px;
 }
