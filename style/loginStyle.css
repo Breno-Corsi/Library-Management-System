@@ -28,7 +28,7 @@ h1 {
     right: 0;
     bottom: 0;
 
-    background-image: url("./images/background-bookshelf.png");
+    background-image: url("../images/background-bookshelf.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -127,14 +127,4 @@ h1 {
     transition: 0.5s;
     -webkit-box-shadow: inset 3px 0px 17px -2px rgba(0,0,0,0.4); 
     box-shadow: inset 5px 0px 17px -2px rgba(0,0,0,0.4);
-}
-
-.home-container {
-    width: 1800px;
-    height: 830px;
-
-    justify-self: center;
-    margin-top: 60px;
-
-    background-color: #000;
 }

@@ -1,13 +1,10 @@
-
-
 function loginValidation() {
     const loginMail = document.getElementById("login-email").value;
     const loginPassword = document.getElementById("login-password").value;
 
-    if (loginMail == "admin@admin.com" && loginPassword == "123123") {
-        console.log("Login successful!");
+    if (loginMail == "admin@mail.com" && loginPassword == "1234") {
         // https://stackoverflow.com/questions/442384/jumping-to-a-new-html-page-with-javascript
-        window.location.pathname = "Library-Management-System/home.html";
+        window.location.pathname = "home.html";
         
         return false;
     }
