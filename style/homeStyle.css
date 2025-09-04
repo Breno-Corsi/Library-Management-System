@@ -1,4 +1,12 @@
+* { 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
+    display: flex;
+
     background-color: #D9D9D9;
 
     color: #000;
@@ -36,7 +44,7 @@ body {
     border: 1px solid #000;
     border-radius: 50%;
 }
-img {
+.user-picture-image {
     border-radius: 50%;
 }
 .user-name {
@@ -49,7 +57,7 @@ img {
 .menu-buttons {
     display: flex;
 
-    width: 410px;
+    width: 433px;
     height: 70px;
 
     align-items: center;
@@ -68,5 +76,87 @@ img {
     background-color: #617AF4;
 }
 .menu-buttons:active {
-    background-color: #000;
+    background-color: #333333;
+}
+
+.main-container {
+    display: flex;
+
+    width: 1487px;
+    height: 100vh;
+
+    background-color: #D9D9D9;
+}
+
+.search-container {
+    width: 1242px;
+    height: 50px;
+
+    margin-left: 50px;
+    margin-top: 36px;
+
+    margin-right: 0px;
+    margin-bottom: 0px;
+    gap: 0px;
+
+    background-color: #f2f2f2;
+
+    border: 1px solid #000;
+    border-radius: 3px;
+
+}
+.search-input {
+    width: 1192px;
+    height: 50px;
+
+    background-color: transparent;
+
+    padding-left: 15px;
+
+    border: none;
+
+    font-size: 24px;
+}
+.search-input:focus {
+    outline: none;
+}
+.search-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    background-color: transparent;
+    border: none;
+}
+
+.create-new {
+    width: 134px;
+    height: 50px;
+
+    margin-left: 6px;
+    margin-top: 36px;
+
+    background-color: #3FA236;
+
+    border: none;
+}
+.create-new:hover {
+    background-color: #33802c;
+}
+.create-new:active {
+    background-color: #3FA236;
+}
+
+.main-table {
+    position: absolute;
+
+    margin-top: 113px;
+    margin-left: 48px;
+
+    width: 1387px;
+    height: 810px;
+
+    background-color: #f2f2f2;
+
+    border-radius: 3px;
 }
