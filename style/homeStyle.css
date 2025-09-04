@@ -147,7 +147,7 @@ body {
     background-color: #3FA236;
 }
 
-.main-table {
+.table-container {
     position: absolute;
 
     margin-top: 113px;
@@ -156,7 +156,45 @@ body {
     width: 1387px;
     height: 810px;
 
-    background-color: #f2f2f2;
+    background-color: transparent;
+}
 
-    border-radius: 3px;
+table {
+    font-family: 'poppins', sans-serif;
+    width: 100%;
+    border: 2px solid #f2f2f2;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+th, td {
+    width: 250px;
+    height: 50px;
+
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-right: 1px solid #f2f2f2;
+}
+
+th {
+    background-color: #617AF4;
+    color: #F2F2F2;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+td {
+    color: #000;
+}
+tr {
+    background-color: #BFBFBF;
+}
+tr:nth-child(even) {
+    background-color: #CDCDCD;
+}
+
+.actions-buttons {
+    background-color: transparent;
+    border: none;
 }
