@@ -7,7 +7,7 @@
     <title>Library Management System</title>
     <link rel="icon" type="image/x-icon" href="./images/auto_stories_24dp_5985E1_FILL0_wght400_GRAD0_opsz24.svg">
     <link rel="stylesheet" href="./style/homeStyle.css">
-    <link rel="stylesheet" href="./style/modals.css">
+    <link rel="stylesheet" href="./style/modal.css">
 </head>
 
 <body>
@@ -249,14 +249,14 @@
 
     <div id="deletion-box" class="modal-background">
         <div class="modal">
-            <span class="modal-close">&times;</span>
+            <span class="modal-close" onclick="changeModal('none')">&times;</span>
             <div class="modal-delete-background-icon">
                 <img class="modal-delete-icon" src="./images/delete_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
             </div>
             <h1 class="delete-text">Delete</h1>
             <h1 class="delete-message">Are you sure you want to delete:</h1>
             <h1 class="delete-message">Lara Croft (ID: F000001)</h1>
-            <button class="modal-back-button">
+            <button class="modal-back-button" onclick="changeModal('none')">
                 <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
             <button class="modal-delete-button">
@@ -265,7 +265,7 @@
         </div>  
     </div>
 
-    <script src="./script/home.js"></script>
+    <script src="./script/modal.js"></script>
 </body>
 
 </html>
