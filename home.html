@@ -7,6 +7,7 @@
     <title>Library Management System</title>
     <link rel="icon" type="image/x-icon" href="./images/auto_stories_24dp_5985E1_FILL0_wght400_GRAD0_opsz24.svg">
     <link rel="stylesheet" href="./style/homeStyle.css">
+    <link rel="stylesheet" href="./style/modals.css">
 </head>
 
 <body>
@@ -70,13 +71,13 @@
                     <td>lara.croft@raider.com</td>
                     <td>
                         <div>
-                            <button class="actions-buttons">
+                            <button class="actions-buttons" id="info-button">
                                 <img src="./images/info_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
                             <button class="actions-buttons">
                                 <img src="./images/edit_square_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
-                            <button class="actions-buttons">
+                            <button class="actions-buttons" id="delete-button">
                                 <img src="./images/delete_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
                         </div>
@@ -90,13 +91,13 @@
                     <td>geralt.rivia@kaermorhen.org</td>
                     <td>
                         <div>
-                            <button class="actions-buttons">
+                            <button class="actions-buttons" id="info-button">
                                 <img src="./images/info_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
                             <button class="actions-buttons">
                                 <img src="./images/edit_square_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
-                            <button class="actions-buttons">
+                            <button class="actions-buttons" id="delete-button">
                                 <img src="./images/delete_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
                         </div>
@@ -110,13 +111,13 @@
                     <td>kratos@olympus.net</td>
                     <td>
                         <div>
-                            <button class="actions-buttons">
+                            <button class="actions-buttons" id="info-button">
                                 <img src="./images/info_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
                             <button class="actions-buttons">
                                 <img src="./images/edit_square_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
-                            <button class="actions-buttons">
+                            <button class="actions-buttons" id="delete-button">
                                 <img src="./images/delete_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
                         </div>
@@ -130,13 +131,13 @@
                     <td>arthur.morgan@red.de</td>
                     <td>
                         <div>
-                            <button class="actions-buttons">
+                            <button class="actions-buttons" id="info-button">
                                 <img src="./images/info_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
                             <button class="actions-buttons">
                                 <img src="./images/edit_square_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
-                            <button class="actions-buttons">
+                            <button class="actions-buttons" id="delete-button">
                                 <img src="./images/delete_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
                         </div>
@@ -150,13 +151,13 @@
                     <td>tifa.lockhart@ff7.com</td>
                     <td>
                         <div>
-                            <button class="actions-buttons">
+                            <button class="actions-buttons" id="info-button">
                                 <img src="./images/info_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
                             <button class="actions-buttons">
                                 <img src="./images/edit_square_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
-                            <button class="actions-buttons">
+                            <button class="actions-buttons" id="delete-button">
                                 <img src="./images/delete_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
                         </div>
@@ -245,7 +246,26 @@
             </table>            
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <div id="deletion-box" class="modal-background">
+        <div class="modal">
+            <span class="modal-close">&times;</span>
+            <div class="modal-delete-background-icon">
+                <img class="modal-delete-icon" src="./images/delete_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+            </div>
+            <h1 class="delete-text">Delete</h1>
+            <h1 class="delete-message">Are you sure you want to delete:</h1>
+            <h1 class="delete-message">Lara Croft (ID: F000001)</h1>
+            <button class="modal-back-button">
+                <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+            </button>
+            <button class="modal-delete-button">
+                <img src="./images/delete_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+            </button>
+        </div>  
+    </div>
+
+    <script src="./script/home.js"></script>
 </body>
 
 </html>
