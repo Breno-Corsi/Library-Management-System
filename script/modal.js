@@ -1,16 +1,18 @@
-var modal = document.getElementById("deletion-box");
-var closeBtn = document.getElementById("delete-button");
+var deleteModal = document.getElementById("deletion-box");
+var createModal = document.getElementById("creation-box-1")
 
-closeBtn.onclick = function() {
-    changeModal("flex");
+deleteModal.onclick = function(event) {
+    if (event.target == deleteModal) {
+        changeModal("deletion-box", "none");
+    }
+}
+createModal.onclick = function(event) {
+    if (event.target == createModal) {
+        changeModal("creation-box-1", "none");
+    }
 }
 
-modal.onclick = function(event) {
-  if (event.target == modal) {
-    changeModal("none");
-  }
-}
-
-function changeModal(displayStyle) {
-    modal.style.display = displayStyle;
+function changeModal(currentElementId, displayStyle) {
+    let currentModal = document.getElementById(currentElementId);
+    currentModal.style.display = displayStyle;
 }

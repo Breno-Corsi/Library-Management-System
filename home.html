@@ -50,7 +50,7 @@
                 <img src="./images/search_34dp_79747E_FILL1_wght400_GRAD0_opsz40.svg" style="float:left;margin-right:0.5em">
             </button>
         </div>
-        <button class="create-new">
+        <button class="create-new" onclick="changeModal('creation-box-1', 'flex')">
             <img src="./images/person_add_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
         </button>
         <div class="table-container">
@@ -77,7 +77,7 @@
                             <button class="actions-buttons">
                                 <img src="./images/edit_square_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
-                            <button class="actions-buttons" id="delete-button">
+                            <button class="actions-buttons" onclick="changeModal('deletion-box', 'flex')">
                                 <img src="./images/delete_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
                             </button>
                         </div>
@@ -248,21 +248,38 @@
     </div>
 
     <div id="deletion-box" class="modal-background">
-        <div class="modal">
-            <span class="modal-close" onclick="changeModal('none')">&times;</span>
+        <div class="delete-modal">
+            <span class="modal-close" onclick="changeModal('deletion-box', 'none')">&times;</span>
             <div class="modal-delete-background-icon">
                 <img class="modal-delete-icon" src="./images/delete_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
             </div>
             <h1 class="delete-text">Delete</h1>
             <h1 class="delete-message">Are you sure you want to delete:</h1>
             <h1 class="delete-message">Lara Croft (ID: F000001)</h1>
-            <button class="modal-back-button" onclick="changeModal('none')">
+            <button class="modal-back-button" onclick="changeModal('deletion-box', 'none')">
                 <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
             <button class="modal-delete-button">
                 <img src="./images/delete_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
-        </div>  
+        </div>
+    </div>
+
+    <div id="creation-box-1" class="modal-background">
+        <div class="create-user-modal-1">
+            <h1 class="create-account-text">Create Account</h1>
+            <span class="modal-close" onclick="changeModal('creation-box-1', 'none')">&times;</span>
+                <div class="create-account-background-icon">
+                    <img class="modal-create-account-icon" src="./images/add_photo_alternate_128dp_F2F2F2_FILL1_wght400_GRAD0_opsz48.svg">
+                </div>
+                <input class="create-account-input" placeholder="Username">
+                <button class="modal-back-button-2">
+                    <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+                </button>
+                <button class="modal-continue-button">
+                    <img src="./images/arrow_forward_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+                </button>
+        </div>
     </div>
 
     <script src="./script/modal.js"></script>
