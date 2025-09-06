@@ -159,7 +159,8 @@ body {
     filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
 }
 .create-account-input,
-.create-account-input-password {
+.create-account-input-password,
+.create-account-input-personal-information {
     display: flex;
 
     width: 500px;
@@ -206,4 +207,16 @@ body {
 }
 .create-account-input-password {
     margin-top: 30px;
+}
+
+.create-account-input-personal-information-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    margin-top: 100px;
+
+    width: 1200px;
+    height: 400px;
+
+    align-items: center;
 }

@@ -297,6 +297,31 @@
         </div>
     </div>
 
+    <div id="creation-box-3" class="modal-background">
+        <div class="create-user-modal">
+            <h1 class="create-account-text">Personal Information</h1>
+            <span class="modal-close" onclick="changeModal('creation-box-3', 'none')">&times;</span>
+            <div class="create-account-input-personal-information-grid">
+                <input class="create-account-input-personal-information" placeholder="Full Name">
+                <input class="create-account-input-personal-information" placeholder="CPF">
+                <select class="create-account-input-personal-information" placeholder="Sex">
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                <input class="create-account-input-personal-information" placeholder="Phone Number">
+                <input type="date" class="create-account-input-personal-information" placeholder="Date of Birth">
+                <input class="create-account-input-personal-information" placeholder="Email">
+            </div>
+            <button class="modal-back-button-2" onclick="changeModal('creation-box-3', 'none')">
+                <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+            </button>
+            <button class="modal-continue-button" onclick="changeModal('creation-box-4', 'flex')">
+                <img src="./images/check_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+            </button>
+
+
+        </div>
+    </div>
+
     <script src="./script/modal.js"></script>
 </body>
 
