@@ -340,13 +340,13 @@
                 <div class="modal-register-book-image-background">
                     <img class="modal-insert-image-icon-small" src="./images/add_photo_alternate_128dp_F2F2F2_FILL1_wght400_GRAD0_opsz48.svg">
                 </div>
-                <select class="modal-register-book-input" placeholder="Genre">
+                <select class="modal-register-input" placeholder="Genre">
                     <option value="CL">Classic</option>
                     <option value="FA">Fantasy</option>
                 </select>
-                <input class="modal-register-book-input" type="number" placeholder="ISBN">
-                <input class="modal-register-book-input" placeholder="Title">
-                <select class="modal-register-book-input" placeholder="Author">
+                <input class="modal-register-input" type="number" placeholder="ISBN">
+                <input class="modal-register-input" placeholder="Title">
+                <select class="modal-register-input" placeholder="Author">
                     <option value="M000001">George Orwell</option>
                     <option value="F000001">Harper Lee</option>
                 </select>
@@ -358,6 +358,34 @@
                     <img src="./images/check_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
                 </button>
             </div>
+        </div>
+    </div>
+
+    <div id="modal-register-author-box" class="modal-background">
+        <div class="modal-white-box">
+            <h1 class="modal-text">Register Author</h1>
+            <span class="modal-close" onclick="changeModal('modal-register-author-box', 'none')">&times;</span>
+            <div class="modal-register-author-grid">
+                <div class="modal-register-author-image-background">
+                    <img class="modal-insert-image-icon-author" src="./images/add_photo_alternate_128dp_F2F2F2_FILL1_wght400_GRAD0_opsz48.svg">
+                </div>
+                <select class="modal-register-input" placeholder="Country">
+                    <option value="Brazil">Brazil</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                </select>
+                <select class="modal-register-input" placeholder="Sex">
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+                <input class="modal-register-input" placeholder="Name">
+                <textarea class="modal-register-author-textarea" placeholder="Biography"></textarea>
+            </div>
+            <button class="modal-back-button-2" onclick="changeModal('modal-register-author-box', 'none')">
+                <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+            </button>
+            <button class="modal-continue-button" onclick="changeModal('creation-confirmation-box', 'flex')">
+                <img src="./images/check_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+            </button>
         </div>
     </div>
 

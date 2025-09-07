@@ -1,5 +1,5 @@
 const testModal = document.getElementById("modal-register-book-box");
-changeModal("modal-register-book-box", "flex");
+changeModal("modal-register-author-box", "flex");
 
 
 const deleteModal = document.getElementById("deletion-box");
@@ -7,6 +7,7 @@ const createModal1 = document.getElementById("creation-box-1");
 const createModal2 = document.getElementById("creation-box-2");
 const createModal3 = document.getElementById("creation-box-3");
 const createModal4 = document.getElementById("creation-confirmation-box");
+const createModal5 = document.getElementById("modal-register-author-box");
 
 deleteModal.onclick = function(event) {
     if (event.target == deleteModal) {
@@ -31,6 +32,11 @@ createModal3.onclick = function(event) {
 createModal4.onclick = function(event) {
     if (event.target == createModal4) {
         changeModal("creation-confirmation-box", "none");
+    }
+}
+createModal5.onclick = function(event) {
+    if (event.target == createModal5) {
+        changeModal("modal-register-author-box", "none");
     }
 }
 
