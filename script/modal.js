@@ -2,6 +2,7 @@ const deleteModal = document.getElementById("deletion-box");
 const createModal1 = document.getElementById("creation-box-1");
 const createModal2 = document.getElementById("creation-box-2");
 const createModal3 = document.getElementById("creation-box-3");
+const createModal4 = document.getElementById("creation-confirmation-box");
 
 deleteModal.onclick = function(event) {
     if (event.target == deleteModal) {
@@ -21,6 +22,11 @@ createModal2.onclick = function(event) {
 createModal3.onclick = function(event) {
     if (event.target == createModal3) {
         changeModal("creation-box-3", "none");
+    }
+}
+createModal4.onclick = function(event) {
+    if (event.target == createModal4) {
+        changeModal("creation-confirmation-box", "none");
     }
 }
 

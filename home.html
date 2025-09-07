@@ -251,7 +251,7 @@
         <div class="delete-modal">
             <span class="modal-close" onclick="changeModal('deletion-box', 'none')">&times;</span>
             <div class="modal-delete-background-icon">
-                <img class="modal-delete-icon" src="./images/delete_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                <img class="modal-delete-icon" src="./images/delete_50dp_B34040_FILL0_wght400_GRAD0_opsz48.svg">
             </div>
             <h1 class="delete-text">Delete</h1>
             <h1 class="delete-message">Are you sure you want to delete:</h1>
@@ -314,13 +314,22 @@
             <button class="modal-back-button-2" onclick="changeModal('creation-box-3', 'none')">
                 <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
-            <button class="modal-continue-button" onclick="changeModal('creation-box-4', 'flex')">
+            <button class="modal-continue-button" onclick="changeModal('creation-confirmation-box', 'flex')">
                 <img src="./images/check_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
-
-
         </div>
     </div>
+
+    <div id="creation-confirmation-box" class="modal-background">
+        <div class="success-modal">
+            <span class="modal-close" onclick="changeModal('creation-confirmation-box', 'none')">&times;</span>
+            <div class="modal-success-background-icon">
+                <img class="modal-success-icon" src="./images/check_50dp_3FA236_FILL0_wght400_GRAD0_opsz48.svg">
+            </div>
+            <h1 class="delete-text">Success</h1>
+            <h1 class="delete-message">The account was created successfully!</h1>
+            <h1 class="delete-message">Lara Croft (ID: F000001)</h1>
+        </div>
 
     <script src="./script/modal.js"></script>
 </body>
