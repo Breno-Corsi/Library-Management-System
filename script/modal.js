@@ -1,3 +1,7 @@
+const testModal = document.getElementById("modal-register-book-box");
+changeModal("modal-register-book-box", "flex");
+
+
 const deleteModal = document.getElementById("deletion-box");
 const createModal1 = document.getElementById("creation-box-1");
 const createModal2 = document.getElementById("creation-box-2");

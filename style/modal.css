@@ -17,8 +17,7 @@ body {
     backdrop-filter: blur(2.5px);
 }
 
-.delete-modal,
-.success-modal {
+.modal-white-box-small {
     position: absolute;
 
     top: 50%;
@@ -74,15 +73,7 @@ body {
     align-self: center;
     margin-left: 25%;
 }
-.delete-text {
-    justify-self: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
 
-    font-weight: bold;
-
-    font-size: 12px;
-}
 .delete-message {
     justify-self: center;
 
@@ -114,7 +105,7 @@ body {
     background-color: #B34040;
 }
 
-.create-user-modal {
+.modal-white-box {
     position: absolute;
 
     top: 50%;
@@ -129,13 +120,20 @@ body {
 
     background-color: #f2f2f2;
 }
-.create-account-text {
-    justify-self: center;
-    margin-top: 50px;
 
-    font-size: 40px;
+.modal-text,
+.modal-text-small {
+    justify-self: center;
     font-weight: bold;
+    font-size: 40px;
 }
+.modal-text-small {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    font-size: 12px;
+}
+
 .create-account-background-icon {
     width: 350px;
     height: 350px;
@@ -153,7 +151,8 @@ body {
     -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,1);
     box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,1);
 }
-.modal-create-account-icon {
+.modal-insert-image-icon,
+.modal-insert-image-icon-small {
     width: 175px;
     height: 175px;
 
@@ -162,9 +161,17 @@ body {
 
     filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
 }
+.modal-insert-image-icon-small {
+    width: 75px;
+    height: 75px;
+
+    margin-top: 75px;
+}
 .create-account-input,
 .create-account-input-password,
-.create-account-input-personal-information {
+.create-account-input-personal-information,
+.modal-register-book-input,
+.modal-register-book-textarea {
     display: flex;
 
     width: 500px;
@@ -183,6 +190,13 @@ body {
 
     -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.5);
     box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+.modal-register-book-textarea {
+    grid-row: 3 / 5;
+    grid-column: 2;
+    height: 230px;
+
+    padding-top: 10px;
 }
 .modal-back-button-2,
 .modal-continue-button {
@@ -213,7 +227,8 @@ body {
     margin-top: 30px;
 }
 
-.create-account-input-personal-information-grid {
+.create-account-input-personal-information-grid,
+.modal-register-book-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -223,4 +238,26 @@ body {
     height: 400px;
 
     align-items: center;
+}
+
+.modal-register-book-grid {
+    margin-top: 0px;
+    height: 560px;
+}
+
+.modal-register-book-image-background {
+    width: 154px;
+    height: 230px;
+
+    grid-row: 1 / 3;
+
+    background-color: #D9D9D9;
+    border: 1px solid #A1A1A1;
+    border-radius: 3px;
+    
+    justify-self: center;
+    text-align: center;
+
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,1);
 }

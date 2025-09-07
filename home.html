@@ -248,12 +248,12 @@
     </div>
 
     <div id="deletion-box" class="modal-background">
-        <div class="delete-modal">
+        <div class="modal-white-box-small">
             <span class="modal-close" onclick="changeModal('deletion-box', 'none')">&times;</span>
             <div class="modal-delete-background-icon">
                 <img class="modal-delete-icon" src="./images/delete_50dp_B34040_FILL0_wght400_GRAD0_opsz48.svg">
             </div>
-            <h1 class="delete-text">Delete</h1>
+            <h1 class="modal-text-small">Delete</h1>
             <h1 class="delete-message">Are you sure you want to delete:</h1>
             <h1 class="delete-message">Lara Croft (ID: F000001)</h1>
             <button class="modal-back-button" onclick="changeModal('deletion-box', 'none')">
@@ -266,11 +266,11 @@
     </div>
 
     <div id="creation-box-1" class="modal-background">
-        <div class="create-user-modal">
-            <h1 class="create-account-text">Create Account</h1>
+        <div class="modal-white-box">
+            <h1 class="modal-text">Create Account</h1>
             <span class="modal-close" onclick="changeModal('creation-box-1', 'none')">&times;</span>
                 <div class="create-account-background-icon">
-                    <img class="modal-create-account-icon" src="./images/add_photo_alternate_128dp_F2F2F2_FILL1_wght400_GRAD0_opsz48.svg">
+                    <img class="modal-insert-image-icon" src="./images/add_photo_alternate_128dp_F2F2F2_FILL1_wght400_GRAD0_opsz48.svg">
                 </div>
                 <input class="create-account-input" placeholder="Username">
                 <button class="modal-back-button-2" onclick="changeModal('creation-box-1', 'none')">
@@ -283,8 +283,8 @@
     </div>
 
     <div id="creation-box-2" class="modal-background">
-        <div class="create-user-modal">
-            <h1 class="create-account-text">Define Passord</h1>
+        <div class="modal-white-box">
+            <h1 class="modal-text">Define Passord</h1>
             <span class="modal-close" onclick="changeModal('creation-box-2', 'none')">&times;</span>
             <input class="create-account-input-password" placeholder="Password">
             <input class="create-account-input-password" placeholder="Confirm Password">
@@ -298,8 +298,8 @@
     </div>
 
     <div id="creation-box-3" class="modal-background">
-        <div class="create-user-modal">
-            <h1 class="create-account-text">Personal Information</h1>
+        <div class="modal-white-box">
+            <h1 class="modal-text">Personal Information</h1>
             <span class="modal-close" onclick="changeModal('creation-box-3', 'none')">&times;</span>
             <div class="create-account-input-personal-information-grid">
                 <input class="create-account-input-personal-information" placeholder="Full Name">
@@ -321,14 +321,43 @@
     </div>
 
     <div id="creation-confirmation-box" class="modal-background">
-        <div class="success-modal">
+        <div class="modal-white-box-small">
             <span class="modal-close" onclick="changeModal('creation-confirmation-box', 'none')">&times;</span>
             <div class="modal-success-background-icon">
                 <img class="modal-success-icon" src="./images/check_50dp_3FA236_FILL0_wght400_GRAD0_opsz48.svg">
             </div>
-            <h1 class="delete-text">Success</h1>
+            <h1 class="modal-text-small">Success</h1>
             <h1 class="delete-message">The account was created successfully!</h1>
             <h1 class="delete-message">Lara Croft (ID: F000001)</h1>
+        </div>
+    </div>
+
+    <div id="modal-register-book-box" class="modal-background">
+        <div class="modal-white-box">
+            <h1 class="modal-text">Register Book</h1>
+            <span class="modal-close" onclick="changeModal('modal-register-book-box', 'none')">&times;</span>
+            <div class="modal-register-book-grid">
+                <div class="modal-register-book-image-background">
+                    <img class="modal-insert-image-icon-small" src="./images/add_photo_alternate_128dp_F2F2F2_FILL1_wght400_GRAD0_opsz48.svg">
+                </div>
+                <select class="modal-register-book-input" placeholder="Genre">
+                    <option value="CL">Classic</option>
+                    <option value="FA">Fantasy</option>
+                </select>
+                <input class="modal-register-book-input" type="number" placeholder="ISBN">
+                <input class="modal-register-book-input" placeholder="Title">
+                <select class="modal-register-book-input" placeholder="Author">
+                    <option value="M000001">George Orwell</option>
+                    <option value="F000001">Harper Lee</option>
+                </select>
+                <textarea class="modal-register-book-textarea" placeholder="Synopsys"></textarea>
+                <button class="modal-back-button-2" onclick="changeModal('modal-register-book-box', 'none')">
+                    <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+                </button>
+                <button class="modal-continue-button" onclick="changeModal('creation-confirmation-box', 'flex')">
+                    <img src="./images/check_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+                </button>
+            </div>
         </div>
     </div>
 
