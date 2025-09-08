@@ -254,8 +254,8 @@
                 <img class="modal-delete-icon" src="./images/delete_50dp_B34040_FILL0_wght400_GRAD0_opsz48.svg">
             </div>
             <h1 class="modal-text-small">Delete</h1>
-            <h1 class="delete-message">Are you sure you want to delete:</h1>
-            <h1 class="delete-message">Lara Croft (ID: F000001)</h1>
+            <h1 class="modal-text-message">Are you sure you want to delete:</h1>
+            <h1 class="modal-text-message">Lara Croft (ID: F000001)</h1>
             <button class="modal-back-button" onclick="changeModal('deletion-box', 'none')">
                 <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
@@ -327,8 +327,8 @@
                 <img class="modal-success-icon" src="./images/check_50dp_3FA236_FILL0_wght400_GRAD0_opsz48.svg">
             </div>
             <h1 class="modal-text-small">Success</h1>
-            <h1 class="delete-message">The account was created successfully!</h1>
-            <h1 class="delete-message">Lara Croft (ID: F000001)</h1>
+            <h1 class="modal-text-message">The account was created successfully!</h1>
+            <h1 class="modal-text-message">Lara Croft (ID: F000001)</h1>
         </div>
     </div>
 
@@ -386,6 +386,24 @@
             <button class="modal-continue-button" onclick="changeModal('creation-confirmation-box', 'flex')">
                 <img src="./images/check_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
+        </div>
+    </div>
+
+    <div id="modal-register-genre-box" class="modal-background">
+        <div class="modal-white-box">
+            <h1 class="modal-text">Register Genre</h1>
+            <span class="modal-close" onclick="changeModal('modal-register-genre-box', 'none')">&times;</span>
+            <div class="modal-register-genre-grid">
+                <input class="modal-register-input" placeholder="Genre">
+                <textarea class="modal-register-genre-textarea" placeholder="Short description"></textarea>
+                <input class="modal-register-input" placeholder="ID">
+                <button class="modal-back-button-2" onclick="changeModal('modal-register-genre-box', 'none')">
+                    <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+                </button>
+                <button class="modal-continue-button" onclick="changeModal('creation-confirmation-box', 'flex')">
+                    <img src="./images/check_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+                </button>
+            </div>
         </div>
     </div>
 

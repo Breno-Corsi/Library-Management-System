@@ -1,5 +1,12 @@
-const testModal = document.getElementById("modal-register-book-box");
-changeModal("modal-register-author-box", "flex");
+// Code for testing porpuses only
+const testModal = document.getElementById("modal-register-genre-box");
+changeModal("modal-register-genre-box", "flex");
+testModal.onclick = function(event) {
+    if (event.target == testModal) {
+        changeModal("deletion-box", "none");
+    }
+}
+// End
 
 
 const deleteModal = document.getElementById("deletion-box");
@@ -8,6 +15,7 @@ const createModal2 = document.getElementById("creation-box-2");
 const createModal3 = document.getElementById("creation-box-3");
 const createModal4 = document.getElementById("creation-confirmation-box");
 const createModal5 = document.getElementById("modal-register-author-box");
+const createModal6 = document.getElementById("modal-register-genre-box");
 
 deleteModal.onclick = function(event) {
     if (event.target == deleteModal) {
@@ -37,6 +45,11 @@ createModal4.onclick = function(event) {
 createModal5.onclick = function(event) {
     if (event.target == createModal5) {
         changeModal("modal-register-author-box", "none");
+    }
+}
+createModal6.onclick = function(event) {
+    if (event.target == createModal6) {
+        changeModal("modal-register-genre-box", "none");
     }
 }
 
