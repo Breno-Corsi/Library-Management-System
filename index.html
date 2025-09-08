@@ -16,7 +16,13 @@
         <div class="login-container">
             <h1>Log in</h1>
             <input placeholder="e-mail" class="login-input" type="email" id="login-email">
-            <input placeholder="password" class="login-input" type="password" id="login-password">
+            <div class="create-account-input-container">
+                <input placeholder="password" class="login-input-password" type="password" id="login-password">
+                <button class="visibility-icon-container" onclick="togglePasswordVisibility()" id="toggle-visibility">
+                    <img class="visibility-icon-off" src="./images/visibility_off_32dp_000_FILL1_wght400_GRAD0_opsz40.svg">
+                    <img class="visibility-icon-on" src="./images/visibility_32dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                </button>
+            </div>
             <input type="checkbox" class="login-checkbox" id="rememberMe"><label for="rememberMe">Remember me</label>
             <button class="login-button" onclick="loginValidation()">
                 <img src="./images/arrow_forward_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
