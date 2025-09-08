@@ -1,6 +1,7 @@
 const allModalID = [
     "deletion-box",
     "creation-confirmation-box",
+    "modal-logout-box",
     "modal-create-account-1",
     "modal-create-account-2",
     "modal-create-account-3",

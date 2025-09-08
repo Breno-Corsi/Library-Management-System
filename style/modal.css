@@ -51,7 +51,8 @@ body {
 }
 
 .modal-delete-background-icon,
-.modal-success-background-icon {
+.modal-success-background-icon,
+.modal-logout-background-icon {
     display: flex;
 
     background-color: #F2B2B2;
@@ -68,7 +69,12 @@ body {
     background-color: #B8E6B4;
 }
 
-.modal-delete-icon {
+.modal-logout-background-icon {
+    background-color: #D9D9D9;
+}
+
+.modal-delete-icon,
+.modal-logout-icon {
     width: 40px;
     height: 40px;
 
