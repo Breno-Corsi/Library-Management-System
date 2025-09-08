@@ -26,19 +26,19 @@
             <img src="./images/auto_stories_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
             Books
         </div>
-                <div class="menu-buttons">
+        <div class="menu-buttons">
             <img src="./images/article_person_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
             Authors
         </div>
-                <div class="menu-buttons">
+        <div class="menu-buttons">
             <img src="./images/theater_comedy_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
             Genres
         </div>
-                <div class="menu-buttons">
+        <div class="menu-buttons">
             <img src="./images/settings_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
             Settings
         </div>
-                <div class="menu-buttons">
+        <div class="menu-buttons" id="logout-button" onclick="changeModal('modal-logout-box', 'flex')">
             <img src="./images/logout_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
             Log Out
         </div>
@@ -247,8 +247,8 @@
         </div>
     </div>
 
-    <div id="deletion-box" class="modal-background">
-        <div class="modal-white-box-small">
+    <div id="deletion-box" class="modal-background" onclick="clearModal()">
+        <div class="modal-white-box-small" onclick="event.stopPropagation()">
             <span class="modal-close" onclick="clearModal()">&times;</span>
             <div class="modal-delete-background-icon">
                 <img class="modal-delete-icon" src="./images/delete_50dp_B34040_FILL0_wght400_GRAD0_opsz48.svg">
@@ -265,8 +265,8 @@
         </div>
     </div>
 
-    <div id="modal-create-account-1" class="modal-background">
-        <div class="modal-white-box">
+    <div id="modal-create-account-1" class="modal-background" onclick="clearModal()">
+        <div class="modal-white-box" onclick="event.stopPropagation()">
             <h1 class="modal-text">Create Account</h1>
             <span class="modal-close" onclick="clearModal()">&times;</span>
                 <div class="create-account-background-icon">
@@ -282,8 +282,8 @@
         </div>
     </div>
 
-    <div id="modal-create-account-2" class="modal-background">
-        <div class="modal-white-box">
+    <div id="modal-create-account-2" class="modal-background" onclick="clearModal()">
+        <div class="modal-white-box" onclick="event.stopPropagation()">
             <h1 class="modal-text">Define Passord</h1>
             <span class="modal-close" onclick="clearModal()">&times;</span>
             <input class="create-account-input-password" placeholder="Password">
@@ -297,8 +297,8 @@
         </div>
     </div>
 
-    <div id="modal-create-account-3" class="modal-background">
-        <div class="modal-white-box">
+    <div id="modal-create-account-3" class="modal-background" onclick="clearModal()">
+        <div class="modal-white-box" onclick="event.stopPropagation()">
             <h1 class="modal-text">Personal Information</h1>
             <span class="modal-close" onclick="clearModal()">&times;</span>
             <div class="create-account-input-personal-information-grid">
@@ -320,8 +320,8 @@
         </div>
     </div>
 
-    <div id="creation-confirmation-box" class="modal-background">
-        <div class="modal-white-box-small">
+    <div id="creation-confirmation-box" class="modal-background" onclick="clearModal()">
+        <div class="modal-white-box-small" onclick="event.stopPropagation()">
             <span class="modal-close" onclick="clearModal()">&times;</span>
             <div class="modal-success-background-icon">
                 <img class="modal-success-icon" src="./images/check_50dp_3FA236_FILL0_wght400_GRAD0_opsz48.svg">
@@ -332,8 +332,8 @@
         </div>
     </div>
 
-    <div id="modal-register-book-box" class="modal-background">
-        <div class="modal-white-box">
+    <div id="modal-register-book-box" class="modal-background" onclick="clearModal()">
+        <div class="modal-white-box" onclick="event.stopPropagation()">
             <h1 class="modal-text">Register Book</h1>
             <span class="modal-close" onclick="clearModal()">&times;</span>
             <div class="modal-register-book-grid">
@@ -361,8 +361,8 @@
         </div>
     </div>
 
-    <div id="modal-register-author-box" class="modal-background">
-        <div class="modal-white-box">
+    <div id="modal-register-author-box" class="modal-background" onclick="clearModal()">
+        <div class="modal-white-box" onclick="event.stopPropagation()">
             <h1 class="modal-text">Register Author</h1>
             <span class="modal-close" onclick="clearModal()">&times;</span>
             <div class="modal-register-author-grid">
@@ -389,8 +389,8 @@
         </div>
     </div>
 
-    <div id="modal-register-genre-box" class="modal-background">
-        <div class="modal-white-box">
+    <div id="modal-register-genre-box" class="modal-background" onclick="clearModal()">
+        <div class="modal-white-box" onclick="event.stopPropagation()">
             <h1 class="modal-text">Register Genre</h1>
             <span class="modal-close" onclick="clearModal()">&times;</span>
             <div class="modal-register-genre-grid">
@@ -407,8 +407,8 @@
         </div>
     </div>
 
-    <div id="modal-logout-box" class="modal-background">
-        <div class="modal-white-box-small">
+    <div id="modal-logout-box" class="modal-background" onclick="clearModal()">
+        <div class="modal-white-box-small" onclick="event.stopPropagation()">
             <span class="modal-close" onclick="clearModal()">&times;</span>
             <div class="modal-logout-background-icon">
                 <img class="modal-logout-icon" src="./images/logout_24dp_000_FILL0_wght400_GRAD0_opsz24.svg">
@@ -418,7 +418,7 @@
             <button class="modal-back-button" onclick="clearModal()">
                 <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
-            <button class="modal-delete-button">
+            <button class="modal-delete-button" onclick="logOut()">
                 <img src="./images/logout_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
             </button>
         </div>

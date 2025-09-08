@@ -22,3 +22,7 @@ function changeModal(currentElementId, displayStyle) {
     let currentModal = document.getElementById(currentElementId);
     currentModal.style.display = displayStyle;
 }
+
+function logOut() {
+    window.location.pathname = "index.html";
+}
