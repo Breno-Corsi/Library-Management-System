@@ -26,3 +26,19 @@ function changeModal(currentElementId, displayStyle) {
 function logOut() {
     window.location.pathname = "index.html";
 }
+
+const dropZone = document.getElementById("modal-recieve-image");
+
+dropZone.addEventListener("dragover", e => e.preventDefault());
+
+dropZone.addEventListener("drop", e => {
+  e.preventDefault();
+  const file = e.dataTransfer.files[0];
+  if (file && file.type.startsWith("image/")) {
+    const reader = new FileReader();
+    reader.onload = ev => {
+      dropZone.innerHTML = `<img class="create-account-drop-image" src="${ev.target.result}">`;
+    };
+    reader.readAsDataURL(file);
+  }
+});

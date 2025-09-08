@@ -145,7 +145,8 @@ body {
     font-size: 20px;
 }
 
-.create-account-background-icon {
+.create-account-background-icon,
+.create-account-drop-image {
     width: 350px;
     height: 350px;
 
@@ -162,7 +163,10 @@ body {
     -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 1);
     box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 1);
 }
-
+.create-account-drop-image {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 .modal-insert-image-icon,
 .modal-insert-image-icon-author,
 .modal-insert-image-icon-small {
