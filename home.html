@@ -50,7 +50,7 @@
                 <img src="./images/search_34dp_79747E_FILL1_wght400_GRAD0_opsz40.svg" style="float:left;margin-right:0.5em">
             </button>
         </div>
-        <button class="create-new" onclick="changeModal('creation-box-1', 'flex')">
+        <button class="create-new" onclick="changeModal('modal-create-account-1', 'flex')">
             <img src="./images/person_add_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
         </button>
         <div class="table-container">
@@ -249,14 +249,14 @@
 
     <div id="deletion-box" class="modal-background">
         <div class="modal-white-box-small">
-            <span class="modal-close" onclick="changeModal('deletion-box', 'none')">&times;</span>
+            <span class="modal-close" onclick="clearModal()">&times;</span>
             <div class="modal-delete-background-icon">
                 <img class="modal-delete-icon" src="./images/delete_50dp_B34040_FILL0_wght400_GRAD0_opsz48.svg">
             </div>
             <h1 class="modal-text-small">Delete</h1>
             <h1 class="modal-text-message">Are you sure you want to delete:</h1>
             <h1 class="modal-text-message">Lara Croft (ID: F000001)</h1>
-            <button class="modal-back-button" onclick="changeModal('deletion-box', 'none')">
+            <button class="modal-back-button" onclick="clearModal()">
                 <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
             <button class="modal-delete-button">
@@ -265,42 +265,42 @@
         </div>
     </div>
 
-    <div id="creation-box-1" class="modal-background">
+    <div id="modal-create-account-1" class="modal-background">
         <div class="modal-white-box">
             <h1 class="modal-text">Create Account</h1>
-            <span class="modal-close" onclick="changeModal('creation-box-1', 'none')">&times;</span>
+            <span class="modal-close" onclick="clearModal()">&times;</span>
                 <div class="create-account-background-icon">
                     <img class="modal-insert-image-icon" src="./images/add_photo_alternate_128dp_F2F2F2_FILL1_wght400_GRAD0_opsz48.svg">
                 </div>
                 <input class="create-account-input" placeholder="Username">
-                <button class="modal-back-button-2" onclick="changeModal('creation-box-1', 'none')">
+                <button class="modal-back-button-2" onclick="clearModal()">
                     <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
                 </button>
-                <button class="modal-continue-button" onclick="changeModal('creation-box-2', 'flex')">
+                <button class="modal-continue-button" onclick="changeModal('modal-create-account-2', 'flex')">
                     <img src="./images/arrow_forward_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
                 </button>
         </div>
     </div>
 
-    <div id="creation-box-2" class="modal-background">
+    <div id="modal-create-account-2" class="modal-background">
         <div class="modal-white-box">
             <h1 class="modal-text">Define Passord</h1>
-            <span class="modal-close" onclick="changeModal('creation-box-2', 'none')">&times;</span>
+            <span class="modal-close" onclick="clearModal()">&times;</span>
             <input class="create-account-input-password" placeholder="Password">
             <input class="create-account-input-password" placeholder="Confirm Password">
-            <button class="modal-back-button-2" onclick="changeModal('creation-box-2', 'none')">
+            <button class="modal-back-button-2" onclick="clearModal()">
                 <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
-            <button class="modal-continue-button" onclick="changeModal('creation-box-3', 'flex')">
+            <button class="modal-continue-button" onclick="changeModal('modal-create-account-3', 'flex')">
                 <img src="./images/arrow_forward_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
         </div>
     </div>
 
-    <div id="creation-box-3" class="modal-background">
+    <div id="modal-create-account-3" class="modal-background">
         <div class="modal-white-box">
             <h1 class="modal-text">Personal Information</h1>
-            <span class="modal-close" onclick="changeModal('creation-box-3', 'none')">&times;</span>
+            <span class="modal-close" onclick="clearModal()">&times;</span>
             <div class="create-account-input-personal-information-grid">
                 <input class="create-account-input-personal-information" placeholder="Full Name">
                 <input class="create-account-input-personal-information" placeholder="CPF">
@@ -311,7 +311,7 @@
                 <input type="date" class="create-account-input-personal-information" placeholder="Date of Birth">
                 <input class="create-account-input-personal-information" placeholder="Email">
             </div>
-            <button class="modal-back-button-2" onclick="changeModal('creation-box-3', 'none')">
+            <button class="modal-back-button-2" onclick="clearModal()">
                 <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
             <button class="modal-continue-button" onclick="changeModal('creation-confirmation-box', 'flex')">
@@ -322,7 +322,7 @@
 
     <div id="creation-confirmation-box" class="modal-background">
         <div class="modal-white-box-small">
-            <span class="modal-close" onclick="changeModal('creation-confirmation-box', 'none')">&times;</span>
+            <span class="modal-close" onclick="clearModal()">&times;</span>
             <div class="modal-success-background-icon">
                 <img class="modal-success-icon" src="./images/check_50dp_3FA236_FILL0_wght400_GRAD0_opsz48.svg">
             </div>
@@ -335,7 +335,7 @@
     <div id="modal-register-book-box" class="modal-background">
         <div class="modal-white-box">
             <h1 class="modal-text">Register Book</h1>
-            <span class="modal-close" onclick="changeModal('modal-register-book-box', 'none')">&times;</span>
+            <span class="modal-close" onclick="clearModal()">&times;</span>
             <div class="modal-register-book-grid">
                 <div class="modal-register-book-image-background">
                     <img class="modal-insert-image-icon-small" src="./images/add_photo_alternate_128dp_F2F2F2_FILL1_wght400_GRAD0_opsz48.svg">
@@ -351,10 +351,10 @@
                     <option value="F000001">Harper Lee</option>
                 </select>
                 <textarea class="modal-register-book-textarea" placeholder="Synopsys"></textarea>
-                <button class="modal-back-button-2" onclick="changeModal('modal-register-book-box', 'none')">
+                <button class="modal-back-button-2" onclick="clearModal()">
                     <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
                 </button>
-                <button class="modal-continue-button" onclick="changeModal('creation-confirmation-box', 'flex')">
+                <button class="modal-continue-button" onclick="changeModal('confirmation-box', 'flex')">
                     <img src="./images/check_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
                 </button>
             </div>
@@ -364,7 +364,7 @@
     <div id="modal-register-author-box" class="modal-background">
         <div class="modal-white-box">
             <h1 class="modal-text">Register Author</h1>
-            <span class="modal-close" onclick="changeModal('modal-register-author-box', 'none')">&times;</span>
+            <span class="modal-close" onclick="clearModal()">&times;</span>
             <div class="modal-register-author-grid">
                 <div class="modal-register-author-image-background">
                     <img class="modal-insert-image-icon-author" src="./images/add_photo_alternate_128dp_F2F2F2_FILL1_wght400_GRAD0_opsz48.svg">
@@ -380,7 +380,7 @@
                 <input class="modal-register-input" placeholder="Name">
                 <textarea class="modal-register-author-textarea" placeholder="Biography"></textarea>
             </div>
-            <button class="modal-back-button-2" onclick="changeModal('modal-register-author-box', 'none')">
+            <button class="modal-back-button-2" onclick="clearModal()">
                 <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
             <button class="modal-continue-button" onclick="changeModal('creation-confirmation-box', 'flex')">
@@ -392,12 +392,12 @@
     <div id="modal-register-genre-box" class="modal-background">
         <div class="modal-white-box">
             <h1 class="modal-text">Register Genre</h1>
-            <span class="modal-close" onclick="changeModal('modal-register-genre-box', 'none')">&times;</span>
+            <span class="modal-close" onclick="clearModal()">&times;</span>
             <div class="modal-register-genre-grid">
                 <input class="modal-register-input" placeholder="Genre">
                 <textarea class="modal-register-genre-textarea" placeholder="Short description"></textarea>
                 <input class="modal-register-input" placeholder="ID">
-                <button class="modal-back-button-2" onclick="changeModal('modal-register-genre-box', 'none')">
+                <button class="modal-back-button-2" onclick="clearModal()">
                     <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
                 </button>
                 <button class="modal-continue-button" onclick="changeModal('creation-confirmation-box', 'flex')">
