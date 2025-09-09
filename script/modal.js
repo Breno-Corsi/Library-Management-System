@@ -140,3 +140,19 @@ function validatePhoneNumber(phoneNumber) {
 function validateRegex(input, regex) {
     return regex.test(input);
 }
+
+function togglePasswordVisibility() {
+    const elementId = ['password-input-1', 'password-input-2'];
+
+    elementId.forEach((e) => {
+        var x = document.getElementById(e);
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    })
+
+    document.getElementById("toggle-visibility-1").classList.toggle("active");
+    document.getElementById("toggle-visibility-2").classList.toggle("active");
+}

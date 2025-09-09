@@ -286,8 +286,20 @@
         <div class="modal-white-box" onclick="event.stopPropagation()">
             <h1 class="modal-text">Define Passord</h1>
             <span class="modal-close" onclick="clearModal()">&times;</span>
-            <input id="password-input-1" type="password" class="create-account-input-password" placeholder="Password">
-            <input id="password-input-2" type="password" class="create-account-input-password" placeholder="Confirm Password">
+            <div class="create-account-input-container">
+                <input id="password-input-1" type="password" placeholder="Password" class="create-account-input-password">
+                <button class="visibility-icon-container" onclick="togglePasswordVisibility()" id="toggle-visibility-1">
+                    <img class="visibility-icon-off" src="./images/visibility_off_32dp_000_FILL1_wght400_GRAD0_opsz40.svg">
+                    <img class="visibility-icon-on" src="./images/visibility_32dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                </button>
+            </div>
+            <div class="create-account-input-container">
+                <input id="password-input-2" type="password" placeholder="Confirm password" class="create-account-input-password">
+                <button class="visibility-icon-container" onclick="togglePasswordVisibility()" id="toggle-visibility-2">
+                    <img class="visibility-icon-off" src="./images/visibility_off_32dp_000_FILL1_wght400_GRAD0_opsz40.svg">
+                    <img class="visibility-icon-on" src="./images/visibility_32dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                </button>
+            </div>
             <button class="modal-back-button-2" onclick="changeModal('modal-create-account-1', 'flex')">
                 <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
