@@ -9,6 +9,14 @@ const allModalID = [
     "modal-register-genre-box"
 ]
 
+const dropZone = document.getElementById("modal-recieve-image");
+const inputUsername = document.getElementById('input-username');
+const inputEmail = document.getElementById('email-input');
+const inputCPF = document.getElementById('cpf-input');
+const inputFullName = document.getElementById('full-name-input');
+const inputPhoneNumber = document.getElementById('phone-number-input');
+const inputBirthDate = document.getElementById('birth-date-input');
+
 function clearModal() {
     allModalID.forEach(element => {
         let currentModal = document.getElementById(element);
@@ -26,8 +34,6 @@ function logOut() {
     window.location.pathname = "index.html";
 }
 
-const dropZone = document.getElementById("modal-recieve-image");
-
 dropZone.addEventListener("dragover", e => e.preventDefault());
 
 dropZone.addEventListener("drop", e => {
@@ -43,9 +49,14 @@ dropZone.addEventListener("drop", e => {
 });
 
 function validateNextButton1() {
-    if (validateBlankInput('input-username') != false) {
-        changeModal('modal-create-account-2', 'flex');
+    if (validateBlankInput('input-username') == false) {
+        return false;
     }
+    if (validateRegex(inputUsername.value, /[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){6,18}[a-zA-Z0-9]/) == false) {
+        alert("Please input valid username!");
+        return false;
+    }
+    changeModal('modal-create-account-2', 'flex');
 }
 
 function validateNextButton2() {
@@ -58,6 +69,14 @@ function validateNextButton2() {
     }
 }
 
+inputCPF.addEventListener("keyup", (event) => {
+    validateCPF(inputCPF.value);
+})
+
+inputPhoneNumber.addEventListener("keyup", (event) => {
+    validatePhoneNumber(inputPhoneNumber.value);
+})
+
 function validateNextButton3() {
     if ((
         validateBlankInput('full-name-input') != false &&
@@ -68,6 +87,29 @@ function validateNextButton3() {
         validateBlankInput('email-input') != false
     )) {
         changeModal('creation-confirmation-box', 'flex');
+    }
+    if (inputPhoneNumber.value.length != 15) {
+        alert("Please input valid phone number!");
+        return false;
+    }
+    if (inputCPF.value.length != 14) {
+        alert("Please input valid CPF number!");
+        return false;
+    }
+    if (validateRegex(inputEmail.value, /\S+@\S+\.\S+/) == false) {
+        alert("Please input valid email!");
+        return false;
+    }
+    if (inputFullName.value.length < 3) {
+        alert("Please input valid full name!");
+        return false;
+    }
+    let birthDate = new Date(inputBirthDate.value);
+    const tenYearsAgo = new Date();
+    tenYearsAgo.setFullYear(tenYearsAgo.getFullYear() - 10);
+    if (birthDate > tenYearsAgo) {
+        alert("Please input valid birth date!");
+        return false;
     }
 }
 
@@ -87,11 +129,6 @@ function validateCPF(cpf) {
     inputCPF.value = cpf;
 }
 
-const inputCPF = document.getElementById('cpf-input');
-inputCPF.addEventListener("keyup", (event) => {
-    validateCPF(inputCPF.value);
-})
-
 function validatePhoneNumber(phoneNumber) {
     phoneNumber = phoneNumber.replace(/\D/g,"");
     phoneNumber = phoneNumber.replace(/(\d{0})(\d)/,"$1($2");
@@ -100,7 +137,6 @@ function validatePhoneNumber(phoneNumber) {
     inputPhoneNumber.value = phoneNumber;
 }
 
-const inputPhoneNumber = document.getElementById('phone-number-input');
-inputPhoneNumber.addEventListener("keyup", (event) => {
-    validatePhoneNumber(inputPhoneNumber.value);
-})
+function validateRegex(input, regex) {
+    return regex.test(input);
+}

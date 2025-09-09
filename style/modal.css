@@ -331,3 +331,6 @@ body {
 
     border-radius: 125px;
 }
+
+select { color: #000; }
+select:invalid { color: #A1A1A1; }
