@@ -18,19 +18,19 @@
             </div>
             <div class="user-name">Jill Valentine</div>
         </div>
-        <div class="menu-buttons">
+        <div id="menu-button-users" class="menu-buttons" onclick="changeCreateButton('button-register-new-user'); changeFocus('menu-button-users')">
             <img src="./images/person_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
             Users
         </div>
-        <div class="menu-buttons">
+        <div id="menu-button-books" class="menu-buttons" onclick="changeCreateButton('button-register-new-book'); changeFocus('menu-button-books')">
             <img src="./images/auto_stories_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
             Books
         </div>
-        <div class="menu-buttons">
+        <div id="menu-button-authors" class="menu-buttons" onclick="changeCreateButton('button-register-new-author'); changeFocus('menu-button-authors')">
             <img src="./images/article_person_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
             Authors
         </div>
-        <div class="menu-buttons">
+        <div id="menu-button-genres" class="menu-buttons" onclick="changeCreateButton('button-register-new-genre'); changeFocus('menu-button-genres')">
             <img src="./images/theater_comedy_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
             Genres
         </div>
@@ -50,8 +50,17 @@
                 <img src="./images/search_34dp_79747E_FILL1_wght400_GRAD0_opsz40.svg" style="float:left;margin-right:0.5em">
             </button>
         </div>
-        <button class="create-new" onclick="changeModal('modal-create-account-1', 'flex')">
+        <button id="button-register-new-user" class="create-new" onclick="changeModal('modal-create-account-1', 'flex')">
             <img src="./images/person_add_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
+        </button>
+        <button id="button-register-new-book" class="create-new" onclick="changeModal('modal-register-book-box', 'flex')">
+            <img src="./images/7dc91937-9444-4a4a-978e-51f7f514d7d8.png">
+        </button>
+        <button id="button-register-new-author" class="create-new" onclick="changeModal('modal-register-author-box', 'flex')">
+            <img src="./images/register-author-icon.png">
+        </button>
+        <button id="button-register-new-genre" class="create-new" onclick="changeModal('modal-register-genre-box', 'flex')">
+            <img src="./images/register-genre-icon.png">
         </button>
         <div class="table-container">
             <table>
@@ -437,6 +446,7 @@
         </div>
     </div>
 
+    <script src="./script/home.js"></script>
     <script src="./script/modal.js"></script>
 </body>
 

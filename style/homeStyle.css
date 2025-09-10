@@ -67,16 +67,22 @@ body {
 
     font-size: 36px;
     font-weight: bold;
+    background-color: #333333;
 
     color: #f2f2f2;
-
     border-top: 1px solid #a8a8a8;
 }
 .menu-buttons:hover {
     background-color: #617AF4;
 }
+.menu-buttons-inactive {
+    background-color: #333333;
+}
 .menu-buttons:active {
     background-color: #333333;
+}
+.menu-buttons:focus {
+    background-color: #617AF4;
 }
 
 .main-container {
@@ -138,6 +144,7 @@ body {
 
     background-color: #3FA236;
 
+    border-radius: 3px;
     border: none;
 }
 .create-new:hover {
@@ -145,6 +152,12 @@ body {
 }
 .create-new:active {
     background-color: #3FA236;
+}
+.create-new.active {
+    display: block;
+}
+.create-new.inactive {
+    display: none;
 }
 
 .table-container {

@@ -5,6 +5,7 @@ const allModalID = [
     "modal-create-account-1",
     "modal-create-account-2",
     "modal-create-account-3",
+    "modal-register-book-box",
     "modal-register-author-box",
     "modal-register-genre-box"
 ]
