@@ -1,4 +1,4 @@
-const createButtonElementsId = [
+const registerButtonElementsId = [
     "button-register-new-user",
     "button-register-new-book",
     "button-register-new-author",
@@ -12,23 +12,21 @@ const menuButtonsElementsId = [
     "menu-button-genres"
 ]
 
-function changeCreateButton(createButtonElementId) {
-    createButtonElementsId.forEach((e) => {
-        document.getElementById(e).classList.remove("active");
-        document.getElementById(e).classList.add("inactive");
+let elementId;
+function changeClassElement(createButtonElementId, classActive, classInactive) {
+    if (registerButtonElementsId.includes(createButtonElementId)) {
+        elementId = registerButtonElementsId;
+    }
+    if (menuButtonsElementsId.includes(createButtonElementId)) {
+        elementId = menuButtonsElementsId;
+    }
+    elementId.forEach((e) => {
+        document.getElementById(e).classList.remove(classActive);
+        document.getElementById(e).classList.add(classInactive);
     });
-    document.getElementById(createButtonElementId).classList.add("active");
-    document.getElementById(createButtonElementId).classList.remove("inactive");
+    document.getElementById(createButtonElementId).classList.remove(classInactive);
+    document.getElementById(createButtonElementId).classList.add(classActive);
 }
 
-changeCreateButton("button-register-new-user");
-
-function changeFocus(buttonElementId) {
-    menuButtonsElementsId.forEach((e) => {
-        document.getElementById(e).classList.remove("menu-buttons-active");
-        document.getElementById(e).classList.add("menu-buttons");
-    });
-    document.getElementById(buttonElementId).classList.remove("menu-buttons");
-    document.getElementById(buttonElementId).classList.add("menu-buttons-active");
-}
-changeFocus('menu-button-users');
+changeClassElement('button-register-new-user', 'active', 'inactive');
+changeClassElement('menu-button-users', 'menu-buttons-active', 'menu-buttons');
