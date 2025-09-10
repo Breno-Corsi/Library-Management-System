@@ -54,7 +54,8 @@ body {
     color: #f2f2f2;
 }
 
-.menu-buttons {
+.menu-buttons,
+.menu-buttons-active {
     display: flex;
 
     width: 433px;
@@ -73,15 +74,12 @@ body {
     border-top: 1px solid #a8a8a8;
 }
 .menu-buttons:hover {
-    background-color: #617AF4;
-}
-.menu-buttons-inactive {
-    background-color: #333333;
+    background-color: #494949;
 }
 .menu-buttons:active {
     background-color: #333333;
 }
-.menu-buttons:focus {
+.menu-buttons-active {
     background-color: #617AF4;
 }
 

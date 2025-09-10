@@ -25,9 +25,10 @@ changeCreateButton("button-register-new-user");
 
 function changeFocus(buttonElementId) {
     menuButtonsElementsId.forEach((e) => {
-        document.getElementById(e).style.backgroundColor = "#333333";
-    })
-
-    document.getElementById(buttonElementId).style.backgroundColor = "#617AF4";
+        document.getElementById(e).classList.remove("menu-buttons-active");
+        document.getElementById(e).classList.add("menu-buttons");
+    });
+    document.getElementById(buttonElementId).classList.remove("menu-buttons");
+    document.getElementById(buttonElementId).classList.add("menu-buttons-active");
 }
 changeFocus('menu-button-users');
