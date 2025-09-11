@@ -378,7 +378,7 @@
                 <button class="modal-back-button-2" onclick="clearModal()">
                     <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
                 </button>
-                <button class="modal-continue-button" onclick="continueRegisterButton()">
+                <button class="modal-continue-button" onclick="continueRegisterBookButton()">
                     <img src="./images/check_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
                 </button>
             </div>
@@ -393,23 +393,23 @@
                 <div class="modal-register-author-image-background" id="modal-register-author-image-input">
                     <img class="modal-insert-image-icon-author" src="./images/add_photo_alternate_128dp_F2F2F2_FILL1_wght400_GRAD0_opsz48.svg">
                 </div>
-                <select class="modal-register-input" placeholder="Country">
+                <select id="modal-register-author-country-input" class="modal-register-input" placeholder="Country">
                     <option value="" disabled selected hidden>Country</option>
                     <option value="Brazil">Brazil</option>
                     <option value="United Kingdom">United Kingdom</option>
                 </select>
-                <select class="modal-register-input" placeholder="Sex">
+                <select id="modal-register-author-sex-input" class="modal-register-input" placeholder="Sex">
                     <option value="" disabled selected hidden>Sex</option>
                     <option value="M">Male</option>
                     <option value="F">Female</option>
                 </select>
-                <input class="modal-register-input" placeholder="Name">
-                <textarea class="modal-register-author-textarea" placeholder="Biography"></textarea>
+                <input id="modal-register-author-name-input" class="modal-register-input" placeholder="Name">
+                <textarea id="modal-register-author-biography-input" class="modal-register-author-textarea" placeholder="Biography"></textarea>
             </div>
             <button class="modal-back-button-2" onclick="clearModal()">
                 <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
-            <button class="modal-continue-button" onclick="changeModal('creation-confirmation-box', 'flex')">
+            <button class="modal-continue-button" onclick="continueRegisterAuthorButton()">
                 <img src="./images/check_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
         </div>

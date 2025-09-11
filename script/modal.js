@@ -168,7 +168,7 @@ function validateISBN(isbn) {
     ISBNInput.value = isbn;
 }
 
-function continueRegisterButton() {
+function continueRegisterBookButton() {
     const registerBookISBNInput = document.getElementById('register-book-isbn-input').value;
 
     if ((
@@ -183,6 +183,17 @@ function continueRegisterButton() {
             return false;
         }
         changeModal('creation-confirmation-box', 'flex');
+    }
+}
+
+function continueRegisterAuthorButton() {
+    if ((
+        validateBlankInput('modal-register-author-name-input') != false &&
+        validateBlankInput('modal-register-author-country-input') != false &&
+        validateBlankInput('modal-register-author-sex-input') != false &&
+        validateBlankInput('modal-register-author-biography-input') != false
+    )) {
+            changeModal('creation-confirmation-box', 'flex');
     }
 }
 
