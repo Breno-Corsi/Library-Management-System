@@ -157,3 +157,40 @@ function togglePasswordVisibility() {
     document.getElementById("toggle-visibility-1").classList.toggle("active");
     document.getElementById("toggle-visibility-2").classList.toggle("active");
 }
+
+const ISBNInput = document.getElementById('register-book-isbn-input');
+document.getElementById('register-book-isbn-input').addEventListener("keyup", (event) => {
+    validateISBN(ISBNInput.value);
+})
+
+function validateISBN(isbn) {
+    isbn = isbn.replace(/\D/g,"");
+    ISBNInput.value = isbn;
+}
+
+function continueRegisterButton() {
+    const registerBookTitleInput = document.getElementById('register-book-title-input').value;
+    const registerBookAuthorInput = document.getElementById('register-book-author-input').value;
+    const registerBookISBNInput = document.getElementById('register-book-isbn-input').value;
+    const registerBookGenreInput = document.getElementById('register-book-genre-input').value;
+    const registerBookSynopsysInput = document.getElementById('register-book-synopsys-input').value;
+
+    if ((
+        validateBlankInput('register-book-title-input') != false &&
+        validateBlankInput('register-book-author-input') != false &&
+        validateBlankInput('register-book-genre-input') != false &&
+        validateBlankInput('register-book-isbn-input') != false &&
+        validateBlankInput('register-book-synopsys-input') != false
+    )) {
+        if (registerBookISBNInput.length != 13) {
+            alert("ISBN must contain 13 characters!");
+            return false;
+        }
+        console.log(registerBookTitleInput);
+        console.log(registerBookAuthorInput);
+        console.log(registerBookGenreInput);
+        console.log(registerBookISBNInput);
+        console.log(registerBookSynopsysInput);
+        changeModal('creation-confirmation-box', 'flex');
+    }
+}

@@ -362,21 +362,23 @@
                 <div class="modal-register-book-image-background">
                     <img class="modal-insert-image-icon-small" src="./images/add_photo_alternate_128dp_F2F2F2_FILL1_wght400_GRAD0_opsz48.svg">
                 </div>
-                <select class="modal-register-input" placeholder="Genre">
+                <select id="register-book-genre-input" class="modal-register-input" placeholder="Genre">
+                    <option value="" disabled selected hidden>Genre</option>
                     <option value="CL">Classic</option>
                     <option value="FA">Fantasy</option>
                 </select>
-                <input class="modal-register-input" type="number" placeholder="ISBN">
-                <input class="modal-register-input" placeholder="Title">
-                <select class="modal-register-input" placeholder="Author">
+                <input id="register-book-isbn-input" maxlength="13" class="modal-register-input" type="text" placeholder="ISBN-13">
+                <input id="register-book-title-input" class="modal-register-input" placeholder="Title">
+                <select id="register-book-author-input" class="modal-register-input" placeholder="Author">
+                    <option value="" disabled selected hidden>Author</option>
                     <option value="M000001">George Orwell</option>
                     <option value="F000001">Harper Lee</option>
                 </select>
-                <textarea class="modal-register-book-textarea" placeholder="Synopsys"></textarea>
+                <textarea id="register-book-synopsys-input" class="modal-register-book-textarea" placeholder="Synopsys"></textarea>
                 <button class="modal-back-button-2" onclick="clearModal()">
                     <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
                 </button>
-                <button class="modal-continue-button" onclick="changeModal('confirmation-box', 'flex')">
+                <button class="modal-continue-button" onclick="continueRegisterButton()">
                     <img src="./images/check_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
                 </button>
             </div>
@@ -392,10 +394,12 @@
                     <img class="modal-insert-image-icon-author" src="./images/add_photo_alternate_128dp_F2F2F2_FILL1_wght400_GRAD0_opsz48.svg">
                 </div>
                 <select class="modal-register-input" placeholder="Country">
+                    <option value="" disabled selected hidden>Country</option>
                     <option value="Brazil">Brazil</option>
                     <option value="United Kingdom">United Kingdom</option>
                 </select>
                 <select class="modal-register-input" placeholder="Sex">
+                    <option value="" disabled selected hidden>Sex</option>
                     <option value="M">Male</option>
                     <option value="F">Female</option>
                 </select>
