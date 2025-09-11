@@ -9,7 +9,8 @@ const menuButtonsElementsId = [
     "menu-button-users",
     "menu-button-books",
     "menu-button-authors",
-    "menu-button-genres"
+    "menu-button-genres",
+    "menu-button-settings"
 ]
 
 let elementId;
