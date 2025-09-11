@@ -420,13 +420,13 @@
             <h1 class="modal-text">Register Genre</h1>
             <span class="modal-close" onclick="clearModal()">&times;</span>
             <div class="modal-register-genre-grid">
-                <input class="modal-register-input" placeholder="Genre">
-                <textarea class="modal-register-genre-textarea" placeholder="Short description"></textarea>
-                <input class="modal-register-input" placeholder="ID">
+                <input id="modal-register-genre-name-input" class="modal-register-input" placeholder="Genre">
+                <textarea id="modal-register-genre-description-input" class="modal-register-genre-textarea" placeholder="Short description"></textarea>
+                <input id="modal-register-genre-id-input" type="text" maxlength="8" class="modal-register-input" placeholder="ID">
                 <button class="modal-back-button-2" onclick="clearModal()">
                     <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
                 </button>
-                <button class="modal-continue-button" onclick="changeModal('creation-confirmation-box', 'flex')">
+                <button class="modal-continue-button" onclick="continueRegisterGenreButton()">
                     <img src="./images/check_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
                 </button>
             </div>
