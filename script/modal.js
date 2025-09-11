@@ -169,11 +169,7 @@ function validateISBN(isbn) {
 }
 
 function continueRegisterButton() {
-    const registerBookTitleInput = document.getElementById('register-book-title-input').value;
-    const registerBookAuthorInput = document.getElementById('register-book-author-input').value;
     const registerBookISBNInput = document.getElementById('register-book-isbn-input').value;
-    const registerBookGenreInput = document.getElementById('register-book-genre-input').value;
-    const registerBookSynopsysInput = document.getElementById('register-book-synopsys-input').value;
 
     if ((
         validateBlankInput('register-book-title-input') != false &&
@@ -186,16 +182,11 @@ function continueRegisterButton() {
             alert("ISBN must contain 13 characters!");
             return false;
         }
-        console.log(registerBookTitleInput);
-        console.log(registerBookAuthorInput);
-        console.log(registerBookGenreInput);
-        console.log(registerBookISBNInput);
-        console.log(registerBookSynopsysInput);
         changeModal('creation-confirmation-box', 'flex');
     }
 }
 
-registerBookDropZone = document.getElementById("register-book-image-input");
+let registerBookDropZone = document.getElementById("register-book-image-input");
 registerBookDropZone.addEventListener("dragover", e => e.preventDefault());
 
 registerBookDropZone.addEventListener("drop", e => {
@@ -205,6 +196,21 @@ registerBookDropZone.addEventListener("drop", e => {
     const reader = new FileReader();
     reader.onload = ev => {
       registerBookDropZone.innerHTML = `<img class="register-book-drop-image" src="${ev.target.result}">`;
+    };
+    reader.readAsDataURL(file);
+  }
+});
+
+let registerAuthorDropZone = document.getElementById('modal-register-author-image-input');
+registerAuthorDropZone.addEventListener("dragover", e => e.preventDefault());
+
+registerAuthorDropZone.addEventListener("drop", e => {
+  e.preventDefault();
+  const file = e.dataTransfer.files[0];
+  if (file && file.type.startsWith("image/")) {
+    const reader = new FileReader();
+    reader.onload = ev => {
+      registerAuthorDropZone.innerHTML = `<img class="modal-register-author-image-dropzone" src="${ev.target.result}">`;
     };
     reader.readAsDataURL(file);
   }

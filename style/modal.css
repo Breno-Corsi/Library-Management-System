@@ -309,7 +309,8 @@ body {
 
 .modal-register-book-image-background,
 .modal-register-author-image-background,
-.register-book-drop-image {
+.register-book-drop-image,
+.modal-register-author-image-dropzone {
     width: 154px;
     height: 230px;
 
@@ -333,7 +334,8 @@ body {
     border: 1px solid #A1A1A1;
 }
 
-.modal-register-author-image-background {
+.modal-register-author-image-background,
+.modal-register-author-image-dropzone {
     width: 250px;
     height: 250px;
 
@@ -342,6 +344,12 @@ body {
     margin-top: 50px;
 
     border-radius: 125px;
+}
+.modal-register-author-image-dropzone {
+    width: 250px;
+    height: 250px;
+    margin-top: 0px;
+    grid-row: none;
 }
 
 select { color: #000; }
