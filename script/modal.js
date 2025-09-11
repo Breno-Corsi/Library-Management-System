@@ -194,3 +194,18 @@ function continueRegisterButton() {
         changeModal('creation-confirmation-box', 'flex');
     }
 }
+
+registerBookDropZone = document.getElementById("register-book-image-input");
+registerBookDropZone.addEventListener("dragover", e => e.preventDefault());
+
+registerBookDropZone.addEventListener("drop", e => {
+  e.preventDefault();
+  const file = e.dataTransfer.files[0];
+  if (file && file.type.startsWith("image/")) {
+    const reader = new FileReader();
+    reader.onload = ev => {
+      registerBookDropZone.innerHTML = `<img class="register-book-drop-image" src="${ev.target.result}">`;
+    };
+    reader.readAsDataURL(file);
+  }
+});
