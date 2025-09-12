@@ -12,7 +12,7 @@
 
 <body>
     <div class="menu-container">
-        <div class="user-information">
+        <div class="user-information" onclick="changeModal('modal-self-information', 'flex')">
             <div class="user-picture">
                 <img class="user-picture-image" src="./images/userPicture.png" alt="User Picture" width="75" height="75">
             </div>
@@ -446,6 +446,48 @@
             </button>
             <button class="modal-delete-button" onclick="logOut()">
                 <img src="./images/logout_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
+            </button>
+        </div>
+    </div>
+
+    <div id="modal-self-information" class="modal-background" onclick="clearModal()">
+        <div class="modal-white-box" onclick="event.stopPropagation()">
+            <h1 class="modal-text">User Information</h1>
+            <span class="modal-close" onclick="clearModal()">&times;</span>
+            <div class="modal-self-information-grid">
+                <img class="modal-self-information-image-background" src="./images/userPicture.png">
+                <div class="modal-self-information-text-container">
+                    <h1 class="modal-self-information-text-1">Phone Number:</h1>
+                    <h1 class="modal-self-information-text-2">(99) 99999-9999</h1>
+                </div>
+                <div class="modal-self-information-text-container">
+                    <h1 class="modal-self-information-text-1">Full Name:</h1>
+                    <h1 class="modal-self-information-text-2">Jill Valentine</h1>
+                </div>
+                <div class="modal-self-information-text-container">
+                    <h1 class="modal-self-information-text-1">CPF:</h1>
+                    <h1 class="modal-self-information-text-2">111.222.333-44</h1>
+                </div>
+                <div class="modal-self-information-text-container">
+                    <h1 class="modal-self-information-text-1">Username:</h1>
+                    <h1 class="modal-self-information-text-2">JValentineRE3</h1>
+                </div>
+                <div class="modal-self-information-text-container">
+                    <h1 class="modal-self-information-text-1">Date of Birth:</h1>
+                    <h1 class="modal-self-information-text-2">06/23/1990</h1>
+                </div>
+                <div class="modal-self-information-text-container">
+                    <h1 class="modal-self-information-text-1">Email:</h1>
+                    <h1 class="modal-self-information-text-2">valntine.jill@mail.com</h1>
+                </div>
+                <div class="modal-self-information-text-container">
+                    <h1 class="modal-self-information-text-1">Sex:</h1>
+                    <h1 class="modal-self-information-text-2">Female</h1>
+                </div>
+
+            </div>
+            <button class="modal-back-button-2" onclick="clearModal()">
+                <img src="./images/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
         </div>
     </div>

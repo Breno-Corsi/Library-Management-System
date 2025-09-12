@@ -7,7 +7,8 @@ const allModalID = [
     "modal-create-account-3",
     "modal-register-book-box",
     "modal-register-author-box",
-    "modal-register-genre-box"
+    "modal-register-genre-box",
+    "modal-self-information"
 ]
 
 const dropZone = document.getElementById("modal-recieve-image");

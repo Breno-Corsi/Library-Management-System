@@ -34,6 +34,10 @@ body {
 
     align-items: center;
 }
+.user-information:hover {
+    background-color: #222222;
+}
+
 .user-picture {
     width: 75px;
     height: 75px;

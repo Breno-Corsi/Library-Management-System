@@ -280,7 +280,8 @@ body {
 .create-account-input-personal-information-grid,
 .modal-register-book-grid,
 .modal-register-author-grid,
-.modal-register-genre-grid {
+.modal-register-genre-grid,
+.modal-self-information-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -301,6 +302,10 @@ body {
     margin-top: 0px;
     height: 580px;
 }
+.modal-self-information-grid {
+    margin-top: 50px;
+    height: 580px;
+}
 
 .modal-register-genre-grid {
     margin-top: 150px;
@@ -310,7 +315,8 @@ body {
 .modal-register-book-image-background,
 .modal-register-author-image-background,
 .register-book-drop-image,
-.modal-register-author-image-dropzone {
+.modal-register-author-image-dropzone,
+.modal-self-information-image-background {
     width: 154px;
     height: 230px;
 
@@ -344,6 +350,18 @@ body {
     margin-top: 50px;
 
     border-radius: 125px;
+}
+.modal-self-information-image-background {
+    width: 300px;
+    height: 300px;
+
+    grid-row: 1 / 4;
+
+    border: 3px solid #A1A1A1;
+    border-radius: 150px;
+
+    -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 1);
 }
 .modal-register-author-image-dropzone {
     width: 250px;
@@ -397,4 +415,24 @@ select:invalid { color: #A1A1A1; }
 }
 .visibility-icon-container.active .visibility-icon-on {
     display: block;
+}
+
+.modal-self-information-text-container {
+    width: 400px;
+    height: 100px;
+
+    justify-self: center;
+}
+
+.modal-self-information-text-1,
+.modal-self-information-text-2 {
+    font-size: 24px;
+
+    font-weight: normal;
+    margin: 0px;
+
+    color: #000;
+}
+.modal-self-information-text-1 {
+    color: #A1A1A1;
 }
