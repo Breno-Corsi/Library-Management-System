@@ -16,3 +16,12 @@ function loginValidation() {
   document.getElementById("login-email").value = '';
   document.getElementById("login-password").value = '';
 }
+
+function togglePasswordVisibility(elementId) {
+  var x = document.getElementById("login-password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
