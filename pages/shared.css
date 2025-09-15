@@ -17,40 +17,52 @@ body {
     padding: 0;
 }
 
+nav {
+    display: block;
+}
+ul {
+    padding: 0;
+    margin-top: 0;
+}
+
 .menu-container {
     display: block;
 
     width: 433px;
     height: 100vh;
 
-    background-color: #333333;
+    background-color: #333333; 
+
+    gap: 0;
 }
 
 .user-information {
     display: flex;
 
     width: 433px;
-    height: 120px;
+    height: 140px;
 
     align-items: center;
 }
 .user-information:hover {
-    background-color: #222222;
+    background-color: #555;
 }
 
 .user-picture {
     width: 75px;
     height: 75px;
 
-    margin-left: 33px;
-    margin-right: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     border: 1px solid #000;
     border-radius: 50%;
 }
+
 .user-picture-image {
     border-radius: 50%;
 }
+
 .user-name {
     font-size: 36px;
     font-weight: bold;
@@ -58,32 +70,29 @@ body {
     color: #f2f2f2;
 }
 
-.menu-buttons,
-.menu-buttons-active {
+.menu-button,
+.menu-button-active {
     display: flex;
 
-    width: 433px;
+    width: 100%;
     height: 70px;
 
     align-items: center;
 
-    padding-left: 23px;
-    gap: 33px;
+    padding-left: 20px;
+    gap: 20px;
 
     font-size: 36px;
     font-weight: bold;
-    background-color: #333333;
+    background-color: #333;
 
     color: #f2f2f2;
     border-top: 1px solid #a8a8a8;
 }
-.menu-buttons:hover {
-    background-color: #494949;
+.menu-button:hover {
+    background-color: #555;
 }
-.menu-buttons:active {
-    background-color: #333333;
-}
-.menu-buttons-active {
+.menu-button-active {
     background-color: #617AF4;
 }
 
@@ -113,6 +122,7 @@ body {
     border-radius: 3px;
 
 }
+
 .search-input {
     width: 1192px;
     height: 50px;
@@ -128,6 +138,7 @@ body {
 .search-input:focus {
     outline: none;
 }
+
 .search-button {
     position: absolute;
     width: 50px;

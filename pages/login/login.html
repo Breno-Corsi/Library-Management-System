@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/icons/auto_stories_24dp_5985E1_FILL0_wght400_GRAD0_opsz24.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="/shared/shared.css">
+    <link rel="stylesheet" href="./login.css">
+    <title>LMS Login</title>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="background-blur">
+        <div class="login-container">
+            <h1>Log in</h1>
+            <input placeholder="e-mail" class="login-input" type="email" id="login-email">
+            <div class="create-account-input-container">
+                <input id="login-password" placeholder="password" class="login-input-password" type="password">
+                <button class="visibility-icon-container" onclick="togglePasswordVisibility('login-password')"
+                    id="toggle-visibility">
+                    <img class="visibility-icon-off"
+                        src="/assets/icons/visibility_off_32dp_000_FILL1_wght400_GRAD0_opsz40.svg">
+                    <img class="visibility-icon-on"
+                        src="/assets/icons/visibility_32dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                </button>
+            </div>
+            <input type="checkbox" class="login-checkbox" id="rememberMe">
+            <label for="rememberMe">Remember me</label>
+            <button class="login-button" onclick="loginValidation()">
+                <img src="/assets/icons/arrow_forward_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+            </button>
+        </div>
+    </div>
+    <script src="/pages/login/login.js"></script>
+    <script src="/shared/shared.js"></script>
+</body>
+
+</html>

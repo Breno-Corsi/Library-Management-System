@@ -1,0 +1,240 @@
+<div class="menu-container">
+    <div class="user-information" onclick="changeModal('modal-self-information', 'flex')">
+        <div class="user-picture">
+            <img class="user-picture-image" src="/assets/images/userPicture.png" alt="User Picture" width="75" height="75">
+        </div>
+        <div class="user-name">Jill Valentine</div>
+    </div>
+    <div id="menu-button-authors" class="menu-buttons" onclick="changeClassElement('button-register-new-author', 'active', 'inactive'); changeClassElement('menu-button-authors', 'menu-buttons-active', 'menu-buttons')">
+        <img src="/assets/icons/article_person_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
+        Authors
+    </div>
+    <div id="menu-button-books" class="menu-buttons" onclick="changeClassElement('button-register-new-book', 'active', 'inactive'); changeClassElement('menu-button-books', 'menu-buttons-active', 'menu-buttons')">
+        <img src="/assets/icons/auto_stories_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
+        Books
+    </div>
+    <div id="menu-button-genres" class="menu-buttons" onclick="changeClassElement('button-register-new-genre', 'active', 'inactive'); changeClassElement('menu-button-genres', 'menu-buttons-active', 'menu-buttons')">
+        <img src="/assets/icons/theater_comedy_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
+        Genres
+    </div>
+    <div id="menu-button-users" class="menu-buttons-inactive" onclick="changeClassElement('button-register-new-user', 'active', 'inactive'); changeClassElement('menu-button-users', 'menu-buttons-active', 'menu-buttons')">
+        <img src="/assets/icons/person_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
+        Users
+    </div>
+    <div id="logout-button" class="menu-buttons">
+        <img src="/assets/icons/logout_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
+        Log Out
+    </div>
+</div>
+<!-- <div class="main-container">
+    <div class="search-container">
+        <input class="search-input" placeholder="Search...">
+        <button class="search-button">
+            <img src="./images/search_34dp_79747E_FILL1_wght400_GRAD0_opsz40.svg" style="float:left;margin-right:0.5em">
+        </button>
+    </div>
+    <button id="button-register-new-user" class="create-new" onclick="changeModal('modal-create-account-1', 'flex')">
+        <img src="./images/person_add_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
+    </button>
+    <button id="button-register-new-book" class="create-new" onclick="changeModal('modal-register-book-box', 'flex')">
+        <img src="./images/add_book_40dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+    </button>
+    <button id="button-register-new-author" class="create-new" onclick="changeModal('modal-register-author-box', 'flex')">
+        <img src="./images/person_edit_40dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
+    </button>
+    <button id="button-register-new-genre" class="create-new" onclick="changeModal('modal-register-genre-box', 'flex')">
+        <img src="./images/add_genre_40dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+    </button>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>F000001</td>
+                <td>Lara Croft</td>
+                <td>LaraCTomb</td>
+                <td>(555) 301-1290</td>
+                <td>lara.croft@raider.com</td>
+                <td>
+                    <div>
+                        <button class="actions-buttons" id="info-button">
+                            <img src="./images/info_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                        </button>
+                        <button class="actions-buttons">
+                            <img src="./images/edit_square_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                        </button>
+                        <button class="actions-buttons" onclick="changeModal('deletion-box', 'flex')">
+                            <img src="./images/delete_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>M000001</td>
+                <td>Geralt of Rivia</td>
+                <td>WitcherWolf</td>
+                <td>(555) 442-7821</td>
+                <td>geralt.rivia@kaermorhen.org</td>
+                <td>
+                    <div>
+                        <button class="actions-buttons" id="info-button">
+                            <img src="./images/info_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                        </button>
+                        <button class="actions-buttons">
+                            <img src="./images/edit_square_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                        </button>
+                        <button class="actions-buttons" id="delete-button">
+                            <img src="./images/delete_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>M000002</td>
+                <td>Kratos</td>
+                <td>GhostOfOlympus</td>
+                <td>(555) 639-8842</td>
+                <td>kratos@olympus.net</td>
+                <td>
+                    <div>
+                        <button class="actions-buttons" id="info-button">
+                            <img src="./images/info_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                        </button>
+                        <button class="actions-buttons">
+                            <img src="./images/edit_square_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                        </button>
+                        <button class="actions-buttons" id="delete-button">
+                            <img src="./images/delete_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>M000003</td>
+                <td>Arthur Morgan</td>
+                <td>OutlawArthur88</td>
+                <td>(555) 734-5021</td>
+                <td>arthur.morgan@red.de</td>
+                <td>
+                    <div>
+                        <button class="actions-buttons" id="info-button">
+                            <img src="./images/info_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                        </button>
+                        <button class="actions-buttons">
+                            <img src="./images/edit_square_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                        </button>
+                        <button class="actions-buttons" id="delete-button">
+                            <img src="./images/delete_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>F000002</td>
+                <td>Tifa Lockhart</td>
+                <td>Tifa7</td>
+                <td>(555) 642-1177</td>
+                <td>tifa.lockhart@ff7.com</td>
+                <td>
+                    <div>
+                        <button class="actions-buttons" id="info-button">
+                            <img src="./images/info_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                        </button>
+                        <button class="actions-buttons">
+                            <img src="./images/edit_square_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                        </button>
+                        <button class="actions-buttons" id="delete-button">
+                            <img src="./images/delete_36dp_000_FILL0_wght400_GRAD0_opsz40.svg">
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>            
+    </div>
+</div> -->
