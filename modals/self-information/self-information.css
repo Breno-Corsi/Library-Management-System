@@ -1,0 +1,49 @@
+.modal-self-information-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 1200px;
+    height: 580px;
+
+    margin-top: 50px;
+
+    align-items: center;
+}
+
+.modal-self-information-image-background {
+    width: 300px;
+    height: 300px;
+
+    grid-row: 1 / 4;
+
+    background-color: #D9D9D9;
+    border: 1px solid #A1A1A1;
+    border-radius: 50%;
+
+    justify-self: center;
+    text-align: center;
+
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.modal-self-information-text-container {
+    width: 400px;
+    height: 100px;
+
+    justify-self: center;
+}
+
+.modal-self-information-text-1,
+.modal-self-information-text-2 {
+    font-family: 'poppins', sans-serif;
+    font-size: 24px;
+
+    font-weight: normal;
+    margin: 0px;
+
+    color: #A1A1A1;
+}
+.modal-self-information-text-2 {
+    color: #000;
+}

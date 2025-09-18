@@ -1,4 +1,3 @@
-
 body {
     display: flex;
 
@@ -11,6 +10,9 @@ body {
     margin: 0;
     padding: 0;
 }
+
+select { color: #000; }
+select:invalid { color: #A1A1A1; }
 
 .modal-background {
     display: none;
@@ -41,10 +43,13 @@ body {
     border-radius: 3px;
 
     background-color: #f2f2f2;
+    /* background-color: #555; */
 }
 
 .modal-close {
     position: absolute;
+
+    font-weight: bold;
 
     top: 0px;
     right: 10px;
@@ -52,77 +57,19 @@ body {
     float: right;
     font-size: 40px;
 }
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
+.modal-close:hover,
+.modal-close:focus {
+    color: #bd7a7a;
     cursor: pointer;
-}
-
-.modal-delete-background-icon,
-.modal-success-background-icon,
-.modal-logout-background-icon {
-    display: flex;
-
-    background-color: #F2B2B2;
-    width: 80px;
-    height: 80px;
-
-    justify-self: center;
-    margin-top: 40px;
-
-    border-radius: 50px;
-}
-
-.modal-success-background-icon {
-    background-color: #B8E6B4;
-}
-
-.modal-logout-background-icon {
-    background-color: #D9D9D9;
-}
-
-.modal-delete-icon,
-.modal-logout-icon {
-    width: 40px;
-    height: 40px;
-
-    align-self: center;
-    margin-left: 25%;
 }
 
 .modal-text-message {
     justify-self: center;
-
+    font-family: 'poppins', sans-serif;
     font-weight: normal;
 
     font-size: 12px;
     color: #5d5d5d;
-}
-
-.modal-back-button,
-.modal-delete-button {
-    width: 60px;
-    height: 60px;
-
-    border: none;
-    border-radius: 3px;
-    text-align: center;
-}
-
-.modal-back-button {
-    margin-left: 30px;
-    margin-top: 15px;
-    background-color: #CB8E39;
-}
-
-.modal-delete-button {
-    float: right;
-
-    margin-right: 30px;
-    margin-top: 15px;
-    background-color: #B34040;
 }
 
 .modal-white-box {
@@ -139,17 +86,17 @@ body {
     border-radius: 3px;
 
     background-color: #f2f2f2;
+    /* background-color: #555; */
 }
 
 .modal-text,
 .modal-text-small {
     justify-self: center;
+
+    font-family: 'poppins', sans-serif;
     font-weight: bold;
     font-size: 40px;
-    font-family: 'poppins', sans-serif;
-    
 }
-
 .modal-text-small {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -157,59 +104,7 @@ body {
     font-size: 20px;
 }
 
-.create-account-background-icon,
-.create-account-drop-image {
-    width: 350px;
-    height: 350px;
-
-    margin-top: 45px;
-    margin-bottom: 75px;
-    justify-self: center;
-    text-align: center;
-
-    border: 1px solid #A1A1A1;
-    border-radius: 175px;
-
-    background-color: #D9D9D9;
-
-    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 1);
-}
-.create-account-drop-image {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.modal-insert-image-icon,
-.modal-insert-image-icon-author,
-.modal-insert-image-icon-small {
-    width: 175px;
-    height: 175px;
-
-    justify-self: center;
-    margin-top: 25%;
-
-    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
-}
-
-.modal-insert-image-icon-small {
-    width: 75px;
-    height: 75px;
-
-    margin-top: 75px;
-}
-
-.modal-insert-image-icon-author {
-    width: 125px;
-    height: 125px;
-}
-
-.create-account-input,
-.create-account-input-password,
-.create-account-input-personal-information,
-.modal-register-input,
-.modal-register-book-textarea,
-.modal-register-author-textarea,
-.modal-register-genre-textarea {
+.modal-register-input {
     display: flex;
 
     width: 500px;
@@ -230,31 +125,9 @@ body {
     box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-.modal-register-book-textarea {
-    grid-row: 3 / 5;
-    grid-column: 2;
-    height: 230px;
-
-    padding-top: 10px;
-}
-
-.modal-register-author-textarea {
-    height: 200px;
-
-    margin-top: 20px;
-    padding-top: 10px;
-}
-
-.modal-register-genre-textarea {
-    grid-row: 1 / 3;
-    grid-column: 2;
-    height: 265px;
-
-    padding-top: 10px;
-}
-
-.modal-back-button-2,
-.modal-continue-button {
+.modal-continue-button,
+.modal-back-button,
+.modal-small-back-button {
     position: absolute;
 
     bottom: 30px;
@@ -266,186 +139,24 @@ body {
     border-radius: 3px;
     text-align: center;
 }
-
-.modal-back-button-2 {
-    left: 30px;
-    background-color: #CB8E39;
-}
-
 .modal-continue-button {
     right: 30px;
     background-color: #3FA236;
 }
-
-.create-account-input-password {
-    background-color: transparent;
-    
-    border: none;
-
-    -webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0);
-    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0);
+.modal-back-button {
+    left: 30px;
+    background-color: #CB8E39;
 }
-.create-account-input-password:focus {
-    outline-width: 0;
+.modal-small-back-button {
+    width: 60px;
+    height: 60px;
+
+    margin-left: 30px;
+    margin-top: 15px;
+    background-color: #CB8E39;
 }
-
-.create-account-input-personal-information-grid,
-.modal-register-book-grid,
-.modal-register-author-grid,
-.modal-register-genre-grid,
-.modal-self-information-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    margin-top: 100px;
-
-    width: 1200px;
-    height: 400px;
-
-    align-items: center;
-}
-
-.modal-register-book-grid {
-    margin-top: 0px;
-    height: 580px;
-}
-
-.modal-register-author-grid {
-    margin-top: 0px;
-    height: 580px;
-}
-.modal-self-information-grid {
-    margin-top: 50px;
-    height: 580px;
-}
-
-.modal-register-genre-grid {
-    margin-top: 150px;
-    height: 330px;
-}
-
-.modal-register-book-image-background,
-.modal-register-author-image-background,
-.register-book-drop-image,
-.modal-register-author-image-dropzone,
-.modal-self-information-image-background {
-    width: 154px;
-    height: 230px;
-
-    grid-row: 1 / 3;
-
-    background-color: #D9D9D9;
-    border: 1px solid #A1A1A1;
-    border-radius: 3px;
-
-    justify-self: center;
-    text-align: center;
-
-    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 1);
-}
-.register-book-drop-image {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    width: 150px;
-    height: 226px;
-    border: 1px solid #A1A1A1;
-}
-
-.modal-register-author-image-background,
-.modal-register-author-image-dropzone {
-    width: 250px;
-    height: 250px;
-
-    grid-row: 1 / 3;
-
-    margin-top: 50px;
-
-    border-radius: 125px;
-}
-.modal-self-information-image-background {
-    width: 300px;
-    height: 300px;
-
-    grid-row: 1 / 4;
-
-    border: 3px solid #A1A1A1;
-    border-radius: 150px;
-
-    -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 1);
-    box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 1);
-}
-.modal-register-author-image-dropzone {
-    width: 250px;
-    height: 250px;
-    margin-top: 0px;
-    grid-row: none;
-}
-
-select { color: #000; }
-select:invalid { color: #A1A1A1; }
-
-.create-account-input-container {
-    display: flex;
-
-    width: 23.5vw;
-    height: 100px;
-
-    justify-self: center;
-
-    background-color: #e6e6e6;
-    border: 1px solid #888;
-    border-radius: 3px;
-
-    font-size: 30px;
-    color: #000;
-
-    -webkit-box-shadow: inset 3px 0px 17px -2px rgba(0,0,0,0.12); 
-    box-shadow: inset 5px 0px 17px -2px rgba(0,0,0,0.12);
-
-    margin-top: 50px;
-}
-
-.create-account-input-container:first-of-type {
-    margin-top: 200px;
-}
-
-.visibility-icon-container {
-    background-color: transparent;
-    border: none;
-}
-
-.visibility-icon-off {
-    display: block;
-}
-.visibility-icon-on {
-    display: none;
-}
-
-.visibility-icon-container.active .visibility-icon-off {
-    display: none;
-}
-.visibility-icon-container.active .visibility-icon-on {
-    display: block;
-}
-
-.modal-self-information-text-container {
-    width: 400px;
-    height: 100px;
-
-    justify-self: center;
-}
-
-.modal-self-information-text-1,
-.modal-self-information-text-2 {
-    font-family: 'poppins', sans-serif;
-    font-size: 24px;
-
-    font-weight: normal;
-    margin: 0px;
-
-    color: #A1A1A1;
-}
-.modal-self-information-text-2 {
-    color: #000;
+.modal-continue-button:hover,
+.modal-back-button:hover,
+.modal-small-back-button:hover {
+    cursor: pointer;
 }

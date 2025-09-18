@@ -1,0 +1,112 @@
+.create-account-background-icon {
+    width: 350px;
+    height: 350px;
+
+    margin-top: 45px;
+    margin-bottom: 75px;
+    justify-self: center;
+    text-align: center;
+
+    border: 1px solid #A1A1A1;
+    border-radius: 175px;
+
+    background-color: #D9D9D9;
+
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.modal-insert-image-icon {
+    width: 175px;
+    height: 175px;
+
+    justify-self: center;
+    margin-top: 25%;
+
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
+}
+
+.create-account-input-container {
+    display: flex;
+
+    width: 23.5vw;
+    height: 100px;
+
+    justify-self: center;
+
+    background-color: #e6e6e6;
+    border: 1px solid #888;
+    border-radius: 3px;
+
+    font-size: 30px;
+    color: #000;
+
+    -webkit-box-shadow: inset 3px 0px 17px -2px rgba(0,0,0,0.12); 
+    box-shadow: inset 5px 0px 17px -2px rgba(0,0,0,0.12);
+
+    margin-top: 50px;
+}
+.create-account-input-container:first-of-type {
+    margin-top: 200px;
+}
+
+.create-account-input-password {
+    display: flex;
+
+    width: 500px;
+    height: 100px;
+
+    justify-self: center;
+
+    background-color: #E6E6E6;
+
+    border: 1px solid #A1A1A1;
+    border-radius: 3px;
+
+    padding-left: 25px;
+
+    font-size: 24px;
+
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.create-account-input-password {
+    background-color: transparent;
+    
+    border: none;
+
+    -webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.create-account-input-password:focus {
+    outline-width: 0;
+}
+
+.visibility-icon-container {
+    background-color: transparent;
+    border: none;
+}
+.visibility-icon-off {
+    display: block;
+}
+.visibility-icon-on {
+    display: none;
+}
+.visibility-icon-container.active .visibility-icon-off {
+    display: none;
+}
+.visibility-icon-container.active .visibility-icon-on {
+    display: block;
+}
+
+.modal-create-account-personal-information-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 1200px;
+    height: 400px;
+
+    margin-top: 100px;
+
+    align-items: center;
+}

@@ -36,20 +36,6 @@ function logOut() {
     window.location.pathname = "index.html";
 }
 
-dropZone.addEventListener("dragover", e => e.preventDefault());
-
-dropZone.addEventListener("drop", e => {
-  e.preventDefault();
-  const file = e.dataTransfer.files[0];
-  if (file && file.type.startsWith("image/")) {
-    const reader = new FileReader();
-    reader.onload = ev => {
-      dropZone.innerHTML = `<img class="create-account-drop-image" src="${ev.target.result}">`;
-    };
-    reader.readAsDataURL(file);
-  }
-});
-
 function validateNextButton1() {
     if (validateBlankInput('input-username') == false) {
         return false;
@@ -218,6 +204,20 @@ function continueRegisterGenreButton() {
         changeModal('creation-confirmation-box', 'flex');   
     }
 }
+
+dropZone.addEventListener("dragover", e => e.preventDefault());
+
+dropZone.addEventListener("drop", e => {
+  e.preventDefault();
+  const file = e.dataTransfer.files[0];
+  if (file && file.type.startsWith("image/")) {
+    const reader = new FileReader();
+    reader.onload = ev => {
+      dropZone.innerHTML = `<img class="create-account-drop-image" src="${ev.target.result}">`;
+    };
+    reader.readAsDataURL(file);
+  }
+});
 
 let registerBookDropZone = document.getElementById("register-book-image-input");
 registerBookDropZone.addEventListener("dragover", e => e.preventDefault());

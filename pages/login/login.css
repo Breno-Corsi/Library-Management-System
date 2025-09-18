@@ -58,7 +58,7 @@ h1 {
 .login-input-password {
     display: block;
 
-    width: 22.5vw;
+    width: 23.5vw;
     height: 10vh;
 
     justify-self: center;
@@ -138,7 +138,7 @@ h1 {
     width: 5vw;
     height: 5vw;
 
-    margin-top: 3vh;
+    margin-top: 1vh;
     margin-right: 3vw;
 
     background-color: #3FA236;
