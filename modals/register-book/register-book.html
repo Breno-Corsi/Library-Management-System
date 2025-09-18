@@ -1,0 +1,33 @@
+<div id="modal-register-book-box" class="modal-background" onclick="clearModal()">
+    <div class="modal-white-box" onclick="event.stopPropagation()">
+        <h1 class="modal-text">Register Book</h1>
+        <span class="modal-close" onclick="clearModal()">&times;</span>
+        <div class="modal-register-book-grid">
+            <div class="modal-register-book-image-background" id="register-book-image-input">
+                <img class="modal-insert-image-icon-small"
+                    src="/assets/icons/add_photo_alternate_128dp_F2F2F2_FILL1_wght400_GRAD0_opsz48.svg">
+            </div>
+            <select id="register-book-genre-input" class="modal-register-input" placeholder="Genre">
+                <option value="" disabled selected hidden>Genre</option>
+                <option value="CL">Classic</option>
+                <option value="FA">Fantasy</option>
+            </select>
+            <input id="register-book-isbn-input" maxlength="13" class="modal-register-input" type="text"
+                placeholder="ISBN-13">
+            <input id="register-book-title-input" class="modal-register-input" placeholder="Title">
+            <select id="register-book-author-input" class="modal-register-input" placeholder="Author">
+                <option value="" disabled selected hidden>Author</option>
+                <option value="M000001">George Orwell</option>
+                <option value="F000001">Harper Lee</option>
+            </select>
+            <textarea id="register-book-synopsys-input" class="modal-register-book-textarea"
+                placeholder="Synopsys"></textarea>
+            <button class="modal-back-button-2" onclick="clearModal()">
+                <img src="/assets/icons/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+            </button>
+            <button class="modal-continue-button" onclick="continueRegisterBookButton()">
+                <img src="/assets/icons/check_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+            </button>
+        </div>
+    </div>
+</div>

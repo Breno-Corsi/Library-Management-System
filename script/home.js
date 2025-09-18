@@ -28,6 +28,3 @@ function changeClassElement(createButtonElementId, classActive, classInactive) {
     document.getElementById(createButtonElementId).classList.remove(classInactive);
     document.getElementById(createButtonElementId).classList.add(classActive);
 }
-
-changeClassElement('button-register-new-user', 'active', 'inactive');
-changeClassElement('menu-button-users', 'menu-buttons-active', 'menu-buttons');

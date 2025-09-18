@@ -2,7 +2,7 @@
 <html>
     <head>
 
-        <script src="/shared/shared.js" data-file="/pages/shared/head.html"></script>
+        <script data-file="/pages/shared/head.html"></script>
 
         <link rel="stylesheet" href="./authors.css">
         <title>LMS Authors</title>
@@ -13,9 +13,9 @@
         <script data-file="/pages/shared/menu.html"></script>
 
         <div class="main-container">
-            <script src="/pages/shared/shared.js" data-file="/pages/shared/search.html"></script>
+            <script data-file="/pages/shared/search.html"></script>
 
-            <button id="button-register-new-author" class="create-new">
+            <button id="button-register-new-author" class="create-new" onclick="openModal('/modals/register-author/register-author.html')">
                 <img src="/assets/icons/person_edit_40dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
             </button>
 

@@ -1,7 +1,7 @@
 <!-- <script src="/shared/shared.js" data-file="/pages/shared/menu.html"></script> -->
  
 <div class="menu-container">
-    <div class="user-information">
+    <div class="user-information" onclick="openModal('/modals/self-information/self-information.html')">
         <div class="user-picture">
             <img class="user-picture-image" src="/assets/images/userPicture.png" alt="User Picture" width="75"
                 height="75">
@@ -23,7 +23,7 @@
                 <a id="menu-button-users" class="menu-button" href="/pages/users/users.html">
                     <img src="/assets/icons/person_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
                     Users</a>
-                <a class="menu-button" onclick="">
+                <a class="menu-button" onclick="openModal('/modals/logout/logout.html')">
                     <img src="/assets/icons/logout_34dp_F2F2F2_FILL1_wght400_GRAD0_opsz40.svg">
                     Log Out</a>
             </ul>

@@ -1,0 +1,31 @@
+<div id="modal-register-author-box" class="modal-background" onclick="clearModal()">
+    <div class="modal-white-box" onclick="event.stopPropagation()">
+        <h1 class="modal-text">Register Author</h1>
+        <span class="modal-close" onclick="clearModal()">&times;</span>
+        <div class="modal-register-author-grid">
+            <div class="modal-register-author-image-background" id="modal-register-author-image-input">
+                <img class="modal-insert-image-icon-author"
+                    src="/assets/icons/add_photo_alternate_128dp_F2F2F2_FILL1_wght400_GRAD0_opsz48.svg">
+            </div>
+            <select id="modal-register-author-country-input" class="modal-register-input" placeholder="Country">
+                <option value="" disabled selected hidden>Country</option>
+                <option value="Brazil">Brazil</option>
+                <option value="United Kingdom">United Kingdom</option>
+            </select>
+            <select id="modal-register-author-sex-input" class="modal-register-input" placeholder="Sex">
+                <option value="" disabled selected hidden>Sex</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+            <input id="modal-register-author-name-input" class="modal-register-input" placeholder="Name">
+            <textarea id="modal-register-author-biography-input" class="modal-register-author-textarea"
+                placeholder="Biography"></textarea>
+        </div>
+        <button class="modal-back-button-2" onclick="clearModal()">
+            <img src="/assets/icons/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+        </button>
+        <button class="modal-continue-button" onclick="continueRegisterAuthorButton()">
+            <img src="/assets/icons/check_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+        </button>
+    </div>
+</div>

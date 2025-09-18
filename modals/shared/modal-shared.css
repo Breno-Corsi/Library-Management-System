@@ -1,5 +1,15 @@
+
 body {
+    display: flex;
+
+    background-color: #D9D9D9;
+
+    color: #000;
     font-family: 'poppins', sans-serif;
+    font-size: 125%;
+
+    margin: 0;
+    padding: 0;
 }
 
 .modal-background {
@@ -136,6 +146,8 @@ body {
     justify-self: center;
     font-weight: bold;
     font-size: 40px;
+    font-family: 'poppins', sans-serif;
+    
 }
 
 .modal-text-small {
@@ -426,13 +438,14 @@ select:invalid { color: #A1A1A1; }
 
 .modal-self-information-text-1,
 .modal-self-information-text-2 {
+    font-family: 'poppins', sans-serif;
     font-size: 24px;
 
     font-weight: normal;
     margin: 0px;
 
-    color: #000;
-}
-.modal-self-information-text-1 {
     color: #A1A1A1;
+}
+.modal-self-information-text-2 {
+    color: #000;
 }

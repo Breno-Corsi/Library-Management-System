@@ -1,0 +1,23 @@
+<div id="modal-create-account-3" class="modal-background" onclick="clearModal()">
+        <div class="modal-white-box" onclick="event.stopPropagation()">
+            <h1 class="modal-text">Personal Information</h1>
+            <span class="modal-close" onclick="clearModal()">&times;</span>
+            <div class="create-account-input-personal-information-grid">
+                <input id="full-name-input" class="create-account-input-personal-information" placeholder="Full Name">
+                <input id="cpf-input" minlength="14" maxlength="14" type="text" class="create-account-input-personal-information" placeholder="CPF">
+                <select id="sex-input" class="create-account-input-personal-information" placeholder="Sex">
+                    <option value="" disabled selected hidden>Sex</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                <input id="phone-number-input" minlength="15" maxlength="15" type="text" class="create-account-input-personal-information" placeholder="Phone Number">
+                <input id="birth-date-input" type="date" class="create-account-input-personal-information" placeholder="Date of Birth">
+                <input id="email-input" type="email" class="create-account-input-personal-information" placeholder="Email">
+            </div>
+            <button class="modal-back-button-2" onclick="changeModal('modal-create-account-2', 'flex')">
+                <img src="/assets/icons/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+            </button>
+            <button class="modal-continue-button" onclick="validateNextButton3()">
+                <img src="/assets/icons/check_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
+            </button>
+        </div>
+    </div>
