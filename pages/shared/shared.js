@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function openModal(file) {
-  // clearModal();
+  clearModal();
   const existing = document.querySelector(".modal-background");
   if (existing) existing.remove();
 
@@ -37,4 +37,16 @@ function initModal() {
 function clearModal() {
   const modal = document.querySelector(".modal-background");
   modal.remove();
+}
+
+function validateBlankInput(elementID) {
+    let inputValue = document.getElementById(elementID).value;
+    if (inputValue == "") {
+        alert(elementID + " cannot be empty");
+        return false;
+    }
+}
+
+function validateRegex(input, regex) {
+    return regex.test(input);
 }

@@ -101,14 +101,6 @@ function validateNextButton3() {
     }
 }
 
-function validateBlankInput(elementID) {
-    let inputValue = document.getElementById(elementID).value;
-    if (inputValue == "") {
-        alert(elementID + " cannot be empty");
-        return false;
-    }
-}
-
 function validateCPF(cpf) {
     cpf = cpf.replace(/\D/g,"");
     cpf = cpf.replace(/(\d{3})(\d)/,"$1.$2");
@@ -123,10 +115,6 @@ function validatePhoneNumber(phoneNumber) {
     phoneNumber = phoneNumber.replace(/(\d{2})(\d)/,"$1) $2");
     phoneNumber = phoneNumber.replace(/(\d{5})(\d)/,"$1-$2");
     inputPhoneNumber.value = phoneNumber;
-}
-
-function validateRegex(input, regex) {
-    return regex.test(input);
 }
 
 function togglePasswordVisibility() {
@@ -169,17 +157,6 @@ function continueRegisterBookButton() {
             alert("ISBN must contain 13 characters!");
             return false;
         }
-        changeModal('creation-confirmation-box', 'flex');
-    }
-}
-
-function continueRegisterAuthorButton() {
-    if ((
-        validateBlankInput('modal-register-author-name-input') != false &&
-        validateBlankInput('modal-register-author-country-input') != false &&
-        validateBlankInput('modal-register-author-sex-input') != false &&
-        validateBlankInput('modal-register-author-biography-input') != false
-    )) {
         changeModal('creation-confirmation-box', 'flex');
     }
 }
