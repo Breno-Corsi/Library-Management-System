@@ -12,6 +12,6 @@ function continueRegisterBookButton() {
             alert("ISBN must contain 13 characters!");
             return false;
         }
-        changeModal('creation-confirmation-box', 'flex');
+        clearModal();
     }
 }

@@ -5,7 +5,7 @@
         <div class="modal-register-genre-grid">
             <input id="modal-register-genre-name-input" class="modal-register-input" placeholder="Genre">
             <textarea id="modal-register-genre-description-input" class="modal-register-genre-textarea" placeholder="Short description"></textarea>
-            <input id="modal-register-genre-id-input" type="text" maxlength="8" class="modal-register-input" placeholder="ID">
+            <input id="modal-register-genre-id-input" type="text" maxlength="4" class="modal-register-input" placeholder="ID" onkeyup="this.value = this.value.toUpperCase()">
             <button class="modal-back-button" onclick="clearModal()">
                 <img src="/assets/icons/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
             </button>
