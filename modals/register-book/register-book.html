@@ -12,8 +12,7 @@
                 <option value="CL">Classic</option>
                 <option value="FA">Fantasy</option>
             </select>
-            <input id="register-book-isbn-input" maxlength="13" class="modal-register-input" type="text"
-                placeholder="ISBN-13">
+            <input id="register-book-isbn-input" maxlength="13" class="modal-register-input" type="text" placeholder="ISBN-13" onkeypress="return /[0-9]/i.test(event.key)">
             <input id="register-book-title-input" class="modal-register-input" placeholder="Title">
             <select id="register-book-author-input" class="modal-register-input" placeholder="Author">
                 <option value="" disabled selected hidden>Author</option>

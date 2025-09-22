@@ -133,34 +133,6 @@ function togglePasswordVisibility() {
     document.getElementById("toggle-visibility-2").classList.toggle("active");
 }
 
-const ISBNInput = document.getElementById('register-book-isbn-input');
-document.getElementById('register-book-isbn-input').addEventListener("keyup", (event) => {
-    validateISBN(ISBNInput.value);
-})
-
-function validateISBN(isbn) {
-    isbn = isbn.replace(/\D/g,"");
-    ISBNInput.value = isbn;
-}
-
-function continueRegisterBookButton() {
-    const registerBookISBNInput = document.getElementById('register-book-isbn-input').value;
-
-    if ((
-        validateBlankInput('register-book-title-input') != false &&
-        validateBlankInput('register-book-author-input') != false &&
-        validateBlankInput('register-book-genre-input') != false &&
-        validateBlankInput('register-book-isbn-input') != false &&
-        validateBlankInput('register-book-synopsys-input') != false
-    )) {
-        if (registerBookISBNInput.length != 13) {
-            alert("ISBN must contain 13 characters!");
-            return false;
-        }
-        changeModal('creation-confirmation-box', 'flex');
-    }
-}
-
 const genreIdInput = document.getElementById('modal-register-genre-id-input');
 document.getElementById('modal-register-genre-id-input').addEventListener("keyup", (event) => {
     validateGenre(genreIdInput.value);

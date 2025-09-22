@@ -16,27 +16,26 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function openModal(file) {
-  clearModal();
-  const existing = document.querySelector(".modal-background");
-  if (existing) existing.remove();
+    clearModal();
+    const existing = document.querySelector(".modal-background");
+    if (existing) existing.remove();
 
-  fetch(file)
-    .then(res => res.text())
-    .then(html => {
-      document.body.insertAdjacentHTML("afterend", html);
-      initModal();
-    })
+    fetch(file)
+        .then(res => res.text())
+        .then(html => {
+            document.body.insertAdjacentHTML("afterend", html);
+            initModal();
+        })
 }
 
 function initModal() {
-  const modal = document.querySelector(".modal-background");
-
-  modal.style.display = "block";
+    const modal = document.querySelector(".modal-background");
+    modal.style.display = "block";
 }
 
 function clearModal() {
-  const modal = document.querySelector(".modal-background");
-  modal.remove();
+    const modal = document.querySelector(".modal-background");
+    if (modal) modal.remove();
 }
 
 function validateBlankInput(elementID) {
