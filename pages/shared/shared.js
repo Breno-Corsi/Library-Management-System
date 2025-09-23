@@ -49,3 +49,20 @@ function validateBlankInput(elementID) {
 function validateRegex(input, regex) {
     return regex.test(input);
 }
+
+// OnKeyPress="formatInput('###.###.###-##', this)
+// https://cursos.alura.com.br/forum/topico-duvida-como-colocar-mascara-de-cpf-em-html-261613
+function formatInput(mask, inputElement) {
+    const numericInput = inputElement.value.replace(/\D/g,"");
+    let outputValue = "", numIndex = 0;
+    for (let i = 0; i < mask.length; i++) {
+        const currentChar = mask[i];
+        if (currentChar === "#") {
+            if (numIndex < numericInput.length) {
+                outputValue += numericInput[numIndex];
+                numIndex++;
+            } else break;
+        } else outputValue += currentChar;
+    }
+    inputElement.value = outputValue;
+}

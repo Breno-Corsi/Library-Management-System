@@ -4,16 +4,16 @@
         <span class="modal-close" onclick="clearModal()">&times;</span>
         <div class="modal-create-account-personal-information-grid">
             <input id="full-name-input" class="modal-register-input" placeholder="Full Name">
-            <input id="cpf-input" minlength="14" maxlength="14" type="text" class="modal-register-input" placeholder="CPF">
+            <input id="cpf-input" minlength="14" maxlength="14" type="text" class="modal-register-input" placeholder="CPF" onkeypress="formatInput('###.###.###-##', this)">
             <select id="sex-input" class="modal-register-input" placeholder="Sex">
                 <option value="" disabled selected hidden>Sex</option>
                 <option value="M">Male</option>
                 <option value="F">Female</option>
-            <input id="phone-number-input" minlength="15" maxlength="15" type="text" class="modal-register-input" placeholder="Phone Number">
+            <input id="phone-number-input" minlength="15" maxlength="15" type="text" class="modal-register-input" placeholder="Phone Number" onkeypress="formatInput('(##) #####-####', this)">
             <input id="birth-date-input" type="date" class="modal-register-input" placeholder="Date of Birth">
             <input id="email-input" type="email" class="modal-register-input" placeholder="Email">
         </div>
-        <button class="modal-back-button" onclick="changeModal('modal-create-account-2', 'flex')">
+        <button class="modal-back-button" onclick="openModal('/modals/register-user/register-user-2.html')">
             <img src="/assets/icons/arrow_back_50dp_F2F2F2_FILL0_wght400_GRAD0_opsz48.svg">
         </button>
         <button class="modal-continue-button" onclick="validateNextButton3()">
