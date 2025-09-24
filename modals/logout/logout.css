@@ -34,3 +34,6 @@
 
     background-color: #B34040;
 }
+.modal-logout-button:hover {
+    cursor: pointer;
+}
