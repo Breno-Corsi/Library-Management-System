@@ -1,0 +1,62 @@
+[
+    {
+        "id": "M000001",
+        "name": "Gabriel García Márquez",
+        "country": "Colombia",
+        "notable_work": "One Hundred Years of Solitude"
+    },
+    {
+        "id": "F000001",
+        "name": "Jane Austen",
+        "country": "United Kingdom",
+        "notable_work": "Pride and Prejudice"
+    },
+    {
+        "id": "M000002",
+        "name": "Haruki Murakami",
+        "country": "Japan",
+        "notable_work": "Norwegian Wood"
+    },
+    {
+        "id": "F000002",
+        "name": "Chimamanda Ngozi Adichie",
+        "country": "Nigeria",
+        "notable_work": "Half of a Yellow Sun"
+    },
+    {
+        "id": "M000003",
+        "name": "Ernest Hemingway",
+        "country": "United States",
+        "notable_work": "The Old Man and the Sea"
+    },
+    {
+        "id": "F000003",
+        "name": "Isabel Allende",
+        "country": "Chile",
+        "notable_work": "The House of the Spirits"
+    },
+    {
+        "id": "M000004",
+        "name": "Leo Tolstoy",
+        "country": "Russia",
+        "notable_work": "War and Peace"
+    },
+    {
+        "id": "F000004",
+        "name": "Margaret Atwood",
+        "country": "Canada",
+        "notable_work": "The Handmaid’s Tale"
+    },
+    {
+        "id": "M000005",
+        "name": "Franz Kafka",
+        "country": "Czech Republic",
+        "notable_work": "The Metamorphosis"
+    },
+    {
+        "id": "F000005",
+        "name": "Virginia Woolf",
+        "country": "United Kingdom",
+        "notable_work": "Mrs Dalloway"
+    }
+]

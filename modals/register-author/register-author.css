@@ -38,26 +38,3 @@
 
     filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
 }
-
-.modal-register-author-textarea {
-    display: flex;
-
-    width: 500px;
-    height: 200px;
-
-    justify-self: center;
-    margin-top: 20px;
-
-    background-color: #E6E6E6;
-
-    border: 1px solid #A1A1A1;
-    border-radius: 3px;
-
-    padding-left: 25px;
-    padding-top: 10px;
-
-    font-size: 24px;
-
-    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-}
