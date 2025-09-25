@@ -1,0 +1,77 @@
+[
+  {
+    "id": "FA",
+    "genre": "Fantasy",
+    "short_description": "Stories set in magical worlds with mythical creatures and epic quests."
+  },
+  {
+    "id": "SF",
+    "genre": "Science Fiction",
+    "short_description": "Explores futuristic technology, space travel, and speculative science."
+  },
+  {
+    "id": "MY",
+    "genre": "Mystery",
+    "short_description": "Centers on solving crimes, uncovering secrets, or finding hidden truths."
+  },
+  {
+    "id": "RO",
+    "genre": "Romance",
+    "short_description": "Focuses on love, relationships, and emotional connections."
+  },
+  {
+    "id": "HR",
+    "genre": "Horror",
+    "short_description": "Designed to scare or unsettle through suspense, fear, or the supernatural."
+  },
+  {
+    "id": "TH",
+    "genre": "Thriller",
+    "short_description": "Fast-paced, full of tension and unexpected twists."
+  },
+  {
+    "id": "AD",
+    "genre": "Adventure",
+    "short_description": "Exciting journeys, exploration, and daring challenges."
+  },
+  {
+    "id": "HF",
+    "genre": "Historical Fiction",
+    "short_description": "Set in the past, blending real events with fictional stories."
+  },
+  {
+    "id": "BI",
+    "genre": "Biography",
+    "short_description": "Life stories of real people, told factually or creatively."
+  },
+  {
+    "id": "PO",
+    "genre": "Poetry",
+    "short_description": "Expressive writing in verse, often using rhythm and imagery."
+  },
+  {
+    "id": "NF",
+    "genre": "Non-Fiction",
+    "short_description": "Factual works covering real events, knowledge, or analysis."
+  },
+  {
+    "id": "CL",
+    "genre": "Classics",
+    "short_description": "Timeless works of literature with lasting cultural impact."
+  },
+  {
+    "id": "CR",
+    "genre": "Crime",
+    "short_description": "Stories of criminals, investigations, and justice."
+  },
+  {
+    "id": "YA",
+    "genre": "Young Adult",
+    "short_description": "Written for teens, focusing on growth, identity, and challenges."
+  },
+  {
+    "id": "MA",
+    "genre": "Magical Realism",
+    "short_description": "Blends everyday life with subtle magical or fantastical elements."
+  }
+]
