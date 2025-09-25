@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("/fake-database/authors.json")
+  fetch("/fake-database/books.json")
     .then(response => response.json())
     .then(database => {
       let placeholder = document.querySelector("#data-output");
@@ -8,9 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
         out += `
           <tr>
             <td>${item.id}</td>
-            <td>${item.name}</td>
-            <td>${item.country}</td>
-            <td>${item.biography}</td>
+            <td>${item.title}</td>
+            <td>${item.author}</td>
+            <td>${item.genre}</td>
+            <td>${item.isbn}</td>
 			<td>
                 <div>
                     <button class="actions-buttons">
