@@ -58,5 +58,35 @@
         "name": "Virginia Woolf",
         "country": "United Kingdom",
         "biography": "Modernist author of 'Mrs Dalloway', pioneer in stream-of-consciousness narrative style."
+    },
+    {
+        "id": "M000006",
+        "name": "James Joyce",
+        "country": "Ireland",
+        "biography": "Innovative modernist writer, best known for 'Ulysses' and stream-of-consciousness techniques."
+    },
+    {
+        "id": "F000006",
+        "name": "Toni Morrison",
+        "country": "United States",
+        "biography": "Nobel Prize-winning novelist whose works like 'Beloved' explore African American identity."
+    },
+    {
+        "id": "M000007",
+        "name": "Jorge Luis Borges",
+        "country": "Argentina",
+        "biography": "Master of short stories, blending philosophy, labyrinths, and infinite realities."
+    },
+    {
+        "id": "F000007",
+        "name": "Mary Shelley",
+        "country": "United Kingdom",
+        "biography": "Pioneer of science fiction, author of 'Frankenstein', blending gothic and speculative themes."
+    },
+    {
+        "id": "M000008",
+        "name": "Fyodor Dostoevsky",
+        "country": "Russia",
+        "biography": "Explored psychology, morality, and philosophy in classics like 'Crime and Punishment'."
     }
 ]
